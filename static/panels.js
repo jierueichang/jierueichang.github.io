@@ -3,7 +3,7 @@ Vue.component('panel-list', {
     template: `
     <div class="card-grid">
         <div class="card" v-for="panel in panels">
-            <!--<div class="card-img" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>-->
+            <div class="card-img" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             <div class="card-body">
                 <a v-bind:href="'https://'+panel.link">{{ panel.name }}</a>
                 <p>{{ panel.description }}</p>

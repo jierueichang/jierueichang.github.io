@@ -4,9 +4,11 @@
         <link rel="stylesheet" href="static/style.css">
         <link rel="icon" href="assets/logo.png">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
         <title>Jieruei Chang (@knosmos)</title>
     </head>
     <body>
+        <div id=canvas-container></div>
         <div class="container">
             <div class="header">
                 <img src="assets/heading-small.png" id="heading-image">
@@ -27,6 +29,7 @@
                     <a name="projects"></a>
                     <h1>Projects</h1>
                     <p>I'm always working on something new. Here are some of the things I've made.</p>
+                    <a href="https://github.com/knosmos">[View all projects]</a><br><br>
                     <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
                 </div>
                 <div id="experience">
@@ -39,7 +42,7 @@
                     <h1>Contact</h1>
                     <div id="contact-content" class="links">
                         <a>[email]</a>
-                        <a>[github]</a>
+                        <a href="https://github.com/knosmos">[github]</a>
                         <a>[linkedin]</a>
                     </div>
                 </div>
@@ -53,5 +56,7 @@
             </div>
         </div>
         <script src="static/panels.js"></script>
+        <script src="static/patterns.js"></script>
+        <script src="static/viz.js"></script>
     </body>
 </html>
