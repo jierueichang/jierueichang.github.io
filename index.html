@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="icon" href="assets/logo.png">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <title>Jieruei Chang (@knosmos)</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="assets/heading-small.png" id="heading-image">
+                <div id="introduction">
+                    Hi! I'm Jieruei. I enjoy competitive programming, web development and making things with computer vision and machine learning.
+                    <br>
+                    <br>
+                    <div class="links">
+                        <a href="#projects">[projects]</a>
+                        <a href="#experience">[experience]</a>
+                        <a href="assets/resume.pdf">[resume]</a>
+                        <a href="#contact">[contact]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div id="projects">
+                    <a name="projects"></a>
+                    <h1>Projects</h1>
+                    <p>I'm always working on something new. Here are some of the things I've made.</p>
+                    <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
+                </div>
+                <div id="experience">
+                    <a name="experience"></a>
+                    <h1>Experience</h1>
+                    <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
+                </div>
+                <div id="contact">
+                    <a name="contact"></a>
+                    <h1>Contact</h1>
+                    <div id="contact-content" class="links">
+                        <a>[email]</a>
+                        <a>[github]</a>
+                        <a>[linkedin]</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="footer">
+                <p>copyright 2021 Jieruei Chang</p>
+                <p>built with <a>vue</a> and <a>p5.js</a></p>
+                <br>
+            </div>
+        </div>
+        <script src="static/panels.js"></script>
+    </body>
+</html>

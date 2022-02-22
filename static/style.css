@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Rockwell";
+    src: url("../assets/rockwell.ttf");
+}
+
+html {
+    --background: #011C31;
+    --text: #F0F0F0;
+    --accent: #3699C7;
+    --secondary: #16719b;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background: var(--background);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+}
+
+/* Heading */
+.header {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40%;
+}
+
+#heading-image {
+    width: 100%;
+    margin: 0% 0% 20px;
+    filter: drop-shadow(0px 0px 10px var(--secondary));
+}
+
+#heading-image:hover {
+    filter: drop-shadow(0px 0px 20px var(--accent));
+    transition: filter 0.2s;
+}
+
+.links {
+    display: contents;
+}
+
+.links a {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .links a{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .header {
+        margin-right: 0%;
+    }
+}
+
+/* Main Content */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    text-shadow: 0px 0px 10px var(--secondary);
+    
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: "Rockwell";
+}
+a:hover {
+    color: var(--text);
+    text-shadow: 0px 0px 20px var(--text);
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--secondary);
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px var(--secondary);
+}
+h1 {
+    font-family: "Rockwell";
+    font-weight: lighter;
+    text-shadow: 0px 0px 20px var(--accent);
+}
+
+/* Cards */
+.card-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap:20px;
+    width:100%;
+}
+.card{
+    color:var(--text);
+    background-color: var(--background);
+    transition:all 0.2s;
+    border-radius:5px;
+    border: 2px solid var(--secondary);
+    display:block;
+    z-index:0;
+    height:100%;
+    box-sizing: border-box;
+}
+.card:hover {
+    box-shadow:0px 0px 20px var(--secondary);
+}
+.card .card-img{
+    width:calc(100% + 4px);
+    height:60%;
+    border-radius: 5px 5px 0px 0px;
+    background-size:cover;
+    background-position:center;
+    border: 2px solid var(--accent);
+    box-sizing: border-box;
+    left:-2px;
+    top:-2px;
+    position:relative;
+    transform: all 0.5s;
+}
+.card-body {
+    padding: 10px;
+}
+.card-body p{
+    color: var(--text);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card-body a{
+    display:block;
+    background-color:transparent;
+    font-size: 18pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
