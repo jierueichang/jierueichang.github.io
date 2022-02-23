@@ -5,6 +5,7 @@
         <link rel="icon" href="assets/logo.png">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <meta viewport="width=device-width, initial-scale=1.0">
         <title>Jieruei Chang (@knosmos)</title>
     </head>
     <body>
@@ -49,8 +50,8 @@
             </div>
             <br>
             <hr>
-            <div class="footer">
-                <p>copyright 2021 Jieruei Chang</p>
+            <div class="footer" id="footer">
+                <p>copyright {{ currentYear }} Jieruei Chang</p>
                 <p>built with <a>vue</a> and <a>p5.js</a></p>
                 <br>
             </div>

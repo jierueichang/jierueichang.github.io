@@ -1,4 +1,4 @@
-let w = window.innerWidth;
+let w = window.innerWidth - 100;
 let h = window.innerHeight;
 
 let gridCntW = w > 800 ? 120:100;
@@ -35,9 +35,9 @@ function setup() {
 }
 
 function draw() {
-    background("#011C31");
+    background("#001322");
     fill("#084764");
-    stroke("#011C31");
+    stroke("#001322");
 
     // draw
     for (let y = 3; y<gridCntH-3; y++) {
@@ -80,7 +80,7 @@ function draw() {
 }
 
 function windowResized() {
-    w = window.innerWidth;
+    w = window.innerWidth - 100;
     h = window.innerHeight;
     resizeCanvas(w, h);
 

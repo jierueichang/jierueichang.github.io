@@ -1,5 +1,5 @@
 html {
-    --background: #011C31;
+    --background: #001322;
     --text: #F0F0F0;
     --accent: #3699C7;
     --secondary: #16719b;
@@ -106,6 +106,12 @@ h1 {
     font-family: "Rockwell";
     font-weight: lighter;
     text-shadow: 0px 0px 20px var(--accent);
+    font-size: 50pt;
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 30pt;
+    }
 }
 
 /* Cards */
@@ -120,7 +126,7 @@ h1 {
     background-color: var(--background);
     transition:all 0.2s;
     border-radius:5px;
-    border: 2px solid var(--text);
+    border: 2px solid var(--secondary);
     display:block;
     z-index:0;
     height:100%;
@@ -135,7 +141,7 @@ h1 {
     border-radius: 5px 5px 0px 0px;
     background-size:cover;
     background-position:center;
-    border: 2px solid var(--text);
+    border: 2px solid var(--secondary);
     box-sizing: border-box;
     left:-2px;
     top:-2px;
@@ -155,4 +161,9 @@ h1 {
     background-color:transparent;
     font-size: 18pt;
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+
+/* Footer */
+.footer {
+    color: var(--secondary);
 }

@@ -20,7 +20,7 @@ let app1 = new Vue(
         projects: [
             {
                 name: "USACO",
-                description: "Solutions to USACO problems",
+                description: "Solutions and explanations for competitive programming problems",
                 link: "knosmos.github.io/usaco",
                 image: "usaco.jpg"
             },
@@ -72,8 +72,18 @@ let app2 = new Vue(
         items: [
             {
                 name: 'Experience 1',
-                summary: "Test",
+                description: "Test",
+                link: "",
+                image: ""
             }
         ]
+    }
+});
+
+let footer = new Vue({
+    el: '#footer',
+    data:
+    {
+        currentYear: new Date().getUTCFullYear()
     }
 });
