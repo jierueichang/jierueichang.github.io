@@ -12,7 +12,7 @@ html {
 
 @font-face {
     font-family: "Open Sans";
-    src: url("../assets/opensans.ttf");
+    src: url("../assets/poppins.ttf");
 }
 
 html, body {
@@ -88,7 +88,7 @@ a {
     
     cursor: pointer;
     transition: all 0.15s;
-    font-family: "Rockwell";
+    font-family: "Open Sans";
     font-weight: 200;
 }
 a:hover {
