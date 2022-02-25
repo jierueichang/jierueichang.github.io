@@ -35,7 +35,7 @@ function setup() {
 }
 
 function draw() {
-    background("#001322");
+    background("#0e0118");
     fill("#084764");
     stroke("#001322");
 

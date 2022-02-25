@@ -3,9 +3,9 @@ Vue.component('panel-list', {
     template: `
     <div class="card-grid">
         <div class="card" v-for="panel in panels">
-            <div class="card-img" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             <div class="card-body">
-                <a v-bind:href="'https://'+panel.link">{{ panel.name }}</a>
+                <a v-bind:href="'https://'+panel.link" target="_blank">{{ panel.name }}</a>
                 <p>{{ panel.description }}</p>
             </div>
         </div>
@@ -22,7 +22,13 @@ let app1 = new Vue(
                 name: "USACO",
                 description: "Solutions and explanations for competitive programming problems",
                 link: "knosmos.github.io/usaco",
-                image: "usaco.jpg"
+                image: "usaco.png"
+            },
+            {
+                name: "Set-Solve",
+                description: "Playing the card game SET with computer vision",
+                link: "github.com/knosmos/set-solve",
+                image: "setsolve.png"
             },
             {
                 name: "SudokuGen",
@@ -71,10 +77,20 @@ let app2 = new Vue(
     {
         items: [
             {
-                name: 'Experience 1',
-                description: "Test",
-                link: "",
-                image: ""
+                name: 'PHS Algorithms Club',
+                description: "Teach competitive programming to 15 members weekly and compete in national tournaments"
+            },
+            {
+                name: 'Princeton Soccer Robotics',
+                description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms"
+            },
+            {
+                name: 'PHS Math Team',
+                description: "As a member of the Math Team, I solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC and CMIMC"
+            },
+            {
+                name: 'Program in Algebraic and Combinatorial Thinking',
+                description: "I was selected for PACT, a series of courses in theoretical computer science. I also mentored beginner students on problem sets."
             }
         ]
     }

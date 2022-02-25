@@ -1,6 +1,7 @@
 html {
-    --background: #001322;
-    --text: #F0F0F0;
+    --background: #0e0118;
+    --heading: #f7f7f7;
+    --text: #b8b8b8;
     --accent: #3699C7;
     --secondary: #16719b;
 }
@@ -11,7 +12,7 @@ html {
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: Poppins;
     src: url("../assets/poppins.ttf");
 }
 
@@ -21,7 +22,7 @@ html, body {
     padding: 0;
     color: var(--text);
     background: var(--background);
-    font-family:'Segoe UI', 'Open Sans', sans-serif;
+    font-family:Poppins, 'Segoe UI', sans-serif;
     font-size: 14pt;
 }
 
@@ -81,6 +82,9 @@ html, body {
 }
 
 /* Main Content */
+p {
+    font-size: 16pt;
+}
 a {
     color: var(--accent);
     text-decoration: none;
@@ -88,11 +92,11 @@ a {
     
     cursor: pointer;
     transition: all 0.15s;
-    font-family: "Open Sans";
+    font-family: Poppins;
     font-weight: 200;
 }
 a:hover {
-    color: var(--text);
+    color: var(--heading);
     text-shadow: 0px 0px 20px var(--text);
 }
 hr {
@@ -107,6 +111,11 @@ h1 {
     font-weight: lighter;
     text-shadow: 0px 0px 20px var(--accent);
     font-size: 50pt;
+    transition: all 0.15s;
+    color: var(--heading);
+}
+h1:hover {
+    text-shadow: 0px 0px 40px var(--text);
 }
 @media screen and (max-width: 800px) {
     h1 {
@@ -118,7 +127,7 @@ h1 {
 .card-grid{
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    gap:20px;
+    gap:50px;
     width:100%;
 }
 .card{
@@ -137,7 +146,7 @@ h1 {
 }
 .card .card-img{
     width:calc(100% + 4px);
-    height:200px;
+    height:150px;
     border-radius: 5px 5px 0px 0px;
     background-size:cover;
     background-position:center;
@@ -149,12 +158,13 @@ h1 {
     transform: all 0.5s;
 }
 .card-body {
-    padding: 10px;
+    padding: 15px;
 }
 .card-body p{
     color: var(--text);
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 14pt;
 }
 .card-body a{
     display:block;
