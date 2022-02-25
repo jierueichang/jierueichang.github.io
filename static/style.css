@@ -67,6 +67,15 @@ html, body {
     position: absolute;
 }
 
+#shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 200px 100px var(--background), 0px 0px 200px var(--background);
+}
+
 @media screen and (max-width: 800px) {
     .container {
         margin-left: 10%;
@@ -176,4 +185,5 @@ h1:hover {
 /* Footer */
 .footer {
     color: var(--secondary);
+    background-image: url("../assets/background.png");
 }
