@@ -1,4 +1,4 @@
-let w = window.innerWidth - 100;
+let w = window.innerWidth * 0.97;
 let h = window.innerHeight;
 
 let gridCntW = w > 800 ? 120:100;
@@ -32,12 +32,12 @@ setPattern();
 function setup() {
     let cvas = createCanvas(w, h);
     cvas.parent("canvas-container");
+    fill("#084764");
+    stroke("#001322");
 }
 
 function draw() {
     background("#0e0118");
-    fill("#084764");
-    stroke("#001322");
 
     // draw
     for (let y = 3; y<gridCntH-3; y++) {
@@ -80,13 +80,22 @@ function draw() {
 }
 
 function windowResized() {
-    w = window.innerWidth - 100;
+    w = window.innerWidth * 0.97;
     h = window.innerHeight;
     resizeCanvas(w, h);
 
-    gridCntW = w > 800 ? 120:100;
+    gridCntW = w > 800 ? 120:80;
     gridSize = Math.round(w/gridCntW);
     gridCntH = Math.round(h/gridSize);
     grid = makeGrid();
+    
+    if (w > 1000) {
+        pattern = bi;
+        patternX = 40;
+    }
+    else {
+        pattern = gosper;
+        patternX = 10;
+    }
     setPattern();
 }

@@ -139,6 +139,12 @@ h1:hover {
     gap:50px;
     width:100%;
 }
+@media screen and (max-width: 800px) {
+    .card-grid{
+        gap: 20px;
+    }
+}
+
 .card{
     color:var(--text);
     background-color: var(--background);

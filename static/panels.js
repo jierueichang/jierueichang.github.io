@@ -5,7 +5,8 @@ Vue.component('panel-list', {
         <div class="card" v-for="panel in panels">
             <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             <div class="card-body">
-                <a v-bind:href="'https://'+panel.link" target="_blank">{{ panel.name }}</a>
+                <a v-bind:href="'https://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
+                <a v-if="!panel.link">{{ panel.name }}</a>
                 <p>{{ panel.description }}</p>
             </div>
         </div>
@@ -23,6 +24,12 @@ let app1 = new Vue(
                 description: "Solutions and explanations for competitive programming problems",
                 link: "knosmos.github.io/usaco",
                 image: "usaco.png"
+            },
+            {
+                name: "Robowordle",
+                description: "Using computer vision and a 3D printer to play a phone-based word game",
+                link: "github.com/knosmos/robowordle",
+                image: "wordle_thumb.png"
             },
             {
                 name: "Set-Solve",
@@ -78,19 +85,45 @@ let app2 = new Vue(
         items: [
             {
                 name: 'PHS Algorithms Club',
-                description: "Teach competitive programming to 15 members weekly and compete in national tournaments"
+                description: "Teach competitive programming to 15 members weekly and compete in national tournaments",
             },
             {
                 name: 'Princeton Soccer Robotics',
-                description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms"
+                description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms",
             },
             {
                 name: 'PHS Math Team',
-                description: "As a member of the Math Team, I solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC and CMIMC"
+                description: "Solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC, CMIMC and PUMaC",
+                link: 'sites.google.com/view/phsmathteam/home'
             },
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
-                description: "I was selected for PACT, a series of courses in theoretical computer science. I also mentored beginner students on problem sets."
+                description: "Selected for PACT, a series of courses in theoretical computer science; mentored other students on problem sets.",
+                link: 'algorithmicthinking.org/'
+            },
+            {
+                name: 'Kickside Martial Arts',
+                description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
+            }
+        ]
+    }
+});
+
+let achievements = new Vue({
+    el: '#achievements-grid',
+    data: {
+        items: [
+            {
+                name: "Competitive Programming",
+                description: "Achieved Gold ranking in USA Computing Olympiad",
+            },
+            {
+                name: "Hackathons",
+                description: "Achieved 1st place overall at HackPHS 2021",
+            },
+            {
+                name: "Violin",
+                description: "Winner of Scholarship and Concerto competitions at Westminster Conservatory",
             }
         ]
     }
