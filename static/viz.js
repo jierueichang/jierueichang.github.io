@@ -13,7 +13,7 @@ function makeGrid() {
     }
     return grid;
 }
-grid = makeGrid();
+let grid;
 
 let pattern = bi;
 
@@ -27,13 +27,13 @@ function setPattern() {
         }
     }    
 }
-setPattern();
 
 function setup() {
     let cvas = createCanvas(w, h);
     cvas.parent("canvas-container");
     fill("#084764");
     stroke("#001322");
+    windowResized();
 }
 
 function draw() {

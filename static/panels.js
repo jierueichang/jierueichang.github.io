@@ -119,11 +119,11 @@ let achievements = new Vue({
             },
             {
                 name: "Hackathons",
-                description: "Achieved 1st place overall at HackPHS 2021",
+                description: "Won 1st place overall at HackPHS 2021",
             },
             {
                 name: "Violin",
-                description: "Winner of Scholarship and Concerto competitions at Westminster Conservatory",
+                description: "Winner of Achievement (2022), Scholarship (2017) and Concerto (2019) competitions at Westminster Conservatory",
             }
         ]
     }
