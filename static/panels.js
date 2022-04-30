@@ -7,7 +7,7 @@ Vue.component('panel-list', {
             <div class="card-body">
                 <a v-bind:href="'https://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
                 <a v-if="!panel.link">{{ panel.name }}</a>
-                <p>{{ panel.description }}</p>
+                <p v-html = "panel.description"></p>
             </div>
         </div>
     </div>`
@@ -90,6 +90,7 @@ let app2 = new Vue(
             {
                 name: 'Princeton Soccer Robotics',
                 description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms",
+                link: 'soccer-robotics.github.io/'
             },
             {
                 name: 'PHS Math Team',
@@ -104,6 +105,7 @@ let app2 = new Vue(
             {
                 name: 'Kickside Martial Arts',
                 description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
+                link: 'kicksidema.com/'
             }
         ]
     }
@@ -119,7 +121,11 @@ let achievements = new Vue({
             },
             {
                 name: "Hackathons",
-                description: "Won 1st place overall at HackPHS 2021",
+                description: "HackPHS 2021: 1st Overall, Best Hardware Hack",
+            },
+            {
+                name: "Mathematics Competitions",
+                description: "PUMaC 2021: 1st (Team), Top 10 (Number Theory)<br><br>Qualified for AIME in 2021",
             },
             {
                 name: "Violin",
