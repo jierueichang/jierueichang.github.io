@@ -117,7 +117,7 @@ let achievements = new Vue({
         items: [
             {
                 name: "Competitive Programming",
-                description: "Achieved Gold ranking in USA Computing Olympiad",
+                description: "Achieved Gold ranking in USA Computing Olympiad<br>Won 2nd place at Lockheed Martin CodeQuest competition",
             },
             {
                 name: "Hackathons",
