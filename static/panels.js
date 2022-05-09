@@ -103,6 +103,11 @@ let app2 = new Vue(
                 link: 'algorithmicthinking.org/'
             },
             {
+                name: 'Maker Faire',
+                description: "Demoed electronics projects at Maker Faire New York in <a href='https://makerfaire.com/maker/entry/63428/' style='display:inline-block;font-size:14pt'>2017</a> and <a href='https://makerfaire.com/maker/entry/67542/' style='display:inline-block;font-size:14pt'>2018</a>",
+                link: 'makerfaire.com'
+            },
+            {
                 name: 'Kickside Martial Arts',
                 description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
                 link: 'kicksidema.com/'
