@@ -38,6 +38,7 @@ html, body {
     margin-right: 10%;
     height: 100%;
     box-sizing: border-box;
+    z-index: 999;
 }
 
 /* Heading */
@@ -75,7 +76,6 @@ html, body {
 
 #canvas-container {
     position: absolute;
-    z-index: -1;
 }
 
 #shadow-overlay {
