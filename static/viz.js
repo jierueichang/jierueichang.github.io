@@ -37,7 +37,8 @@ function setup() {
 }
 
 function draw() {
-    background("#0e0118");
+    //background("#0e0118");
+    clear();
 
     // draw
     for (let y = 3; y<gridCntH-3; y++) {

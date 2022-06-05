@@ -53,8 +53,6 @@ html, body {
     position: relative;
 }
 
-
-
 #heading-image {
     width: 100%;
     margin: 0% 0% 20px;
@@ -76,6 +74,10 @@ html, body {
 
 #canvas-container {
     position: absolute;
+}
+
+.p5Canvas {
+    z-index: -999;
 }
 
 #shadow-overlay {
@@ -112,7 +114,7 @@ html, body {
         margin-right: 0%;
     }
     #shadow-overlay {
-        box-shadow: none;
+        display: none;
     }
 }
 
