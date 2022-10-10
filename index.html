@@ -21,8 +21,8 @@
                     <br>
                     <br>
                     <div class="links">
-                        <a href="#projects">[projects]</a>
                         <a href="#experience">[experience]</a>
+                        <a href="#projects">[projects]</a>
                         <a href="#achievements">[achievements]</a>
                         <a href="assets/resume.pdf">[resume]</a>
                         <a href="#contact">[contact]</a>
@@ -30,17 +30,17 @@
                 </div>
             </div>
             <div class="main-content">
+                <div id="experience">
+                    <a name="experience"></a>
+                    <h1>Experience</h1>
+                    <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
+                </div>
                 <div id="projects">
                     <a name="projects"></a>
                     <h1>Projects</h1>
                     <p>I'm always working on something new. Here are some of the things I've made.</p>
                     <a href="https://github.com/knosmos" target="_blank">[View all projects]</a><br><br>
                     <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
-                </div>
-                <div id="experience">
-                    <a name="experience"></a>
-                    <h1>Experience</h1>
-                    <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
                 </div>
                 <div id="achievements">
                     <a name="achievements"></a>

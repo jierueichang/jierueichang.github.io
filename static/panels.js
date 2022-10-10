@@ -5,8 +5,9 @@ Vue.component('panel-list', {
         <div class="card" v-for="panel in panels">
             <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             <div class="card-body">
-                <a v-bind:href="'https://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
+                <a v-bind:href="'http://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
                 <a v-if="!panel.link">{{ panel.name }}</a>
+                <p v-if="panel.subtitle" style="color: gray; margin: 5px 0px">{{ panel.subtitle }}</p>
                 <p v-html = "panel.description"></p>
             </div>
         </div>
@@ -84,11 +85,25 @@ let app2 = new Vue(
     {
         items: [
             {
-                name: 'PHS Algorithms Club',
+                name: 'PHS Competitive Programming Team',
+                subtitle: 'Co-Founder',
                 description: "Teach competitive programming to 15 members weekly and compete in national tournaments",
+                link: 'phscpt.github.io'
+            },
+            {
+                name: 'Applied Computing and Multimedia Lab',
+                subtitle: 'Special Research Group Member',
+                description: 'Research and develop models for anomaly detection in audio data using normalizing flow- and autoencoder-based neural network architectures at National Yang Ming Chiao Tung University',
+                link: 'acm.cs.nctu.edu.tw/'
+            },
+            {
+                name: 'Princeton Autonomous Vehicle Engineering',
+                subtitle: 'Computer Vision Specialist, Systems Engineer',
+                description: 'Design computer vision models for autonomous electric boat navigation at Princeton University',
             },
             {
                 name: 'Princeton Soccer Robotics',
+                subtitle: 'Vice President, Software Lead',
                 description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms",
                 link: 'soccer-robotics.github.io/'
             },
@@ -99,7 +114,8 @@ let app2 = new Vue(
             },
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
-                description: "Selected for PACT, a series of courses in theoretical computer science; mentored other students on problem sets.",
+                subtitle: 'Student, Mentor',
+                description: "Selected for PACT, a series of courses in theoretical computer science sponsored by the NSF; mentored other students on problem sets.",
                 link: 'algorithmicthinking.org/'
             },
             {
@@ -108,7 +124,13 @@ let app2 = new Vue(
                 link: 'makerfaire.com'
             },
             {
+                name: 'Music After School',
+                subtitle: 'Mentor',
+                description: "Teach music theory and violin to elementary school students"
+            },
+            {
                 name: 'Kickside Martial Arts',
+                subtitle: 'Instructor',
                 description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
                 link: 'kicksidema.com/'
             }
@@ -122,11 +144,11 @@ let achievements = new Vue({
         items: [
             {
                 name: "Competitive Programming",
-                description: "Achieved Gold ranking in USA Computing Olympiad<br>Won 2nd place at Lockheed Martin CodeQuest competition",
+                description: "USACO Gold (Top 5% pre-college)<br><br>2nd place at Lockheed Martin CodeQuest and PClassic 2022, Top 7% at Lexington Informatics Tournament",
             },
             {
                 name: "Hackathons",
-                description: "HackPHS 2021: 1st Overall, Best Hardware Hack",
+                description: "1st Place and Best Hardware Hack at HackPHS 2021 with 300+ competitors",
             },
             {
                 name: "Mathematics Competitions",
