@@ -144,7 +144,7 @@ let achievements = new Vue({
         items: [
             {
                 name: "Competitive Programming",
-                description: "USACO Gold (Top 5% pre-college)<br><br>2nd place at Lockheed Martin CodeQuest and PClassic 2022, Top 7% at Lexington Informatics Tournament",
+                description: "USACO Gold (Top 5% pre-college)<br><br>2nd place at Lockheed Martin CodeQuest, 2nd place at UPenn's PClassic 2022, Top 7% at Lexington Informatics Tournament",
             },
             {
                 name: "Hackathons",

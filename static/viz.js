@@ -1,5 +1,9 @@
+/* GENERAL */
+
 let w = window.innerWidth * 0.97;
 let h = window.innerHeight;
+
+/* CONWAY */
 
 let gridCntW = w > 800 ? 120:100;
 
@@ -36,9 +40,11 @@ function setup() {
     windowResized();
 }
 
-function draw() {
+function conway() {
     //background("#0e0118");
     clear();
+    stroke("#001322");
+    strokeWeight(1);
 
     // draw
     for (let y = 3; y<gridCntH-3; y++) {
@@ -80,6 +86,71 @@ function draw() {
     frameRate(30);
 }
 
+/* GRAPH */
+let color = [8, 71, 100];
+let init_pts = 20;
+let pts = [];
+for (let i=0; i<init_pts; i++) {
+    pts.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+}
+
+function graph() {
+    clear();
+    strokeWeight(w/500);
+    // draw lines
+    for (let i=0; i<pts.length; i++) {
+        for (let j=i+1; j<pts.length; j++) {
+            let dist = Math.sqrt((pts[i][0] - pts[j][0]) ** 2 + (pts[i][1] - pts[j][1]) ** 2);
+            stroke(color[0], color[1], color[2], 255 / ((dist-1)/(w/10) + 0.0001));
+            line(pts[i][0], pts[i][1], pts[j][0], pts[j][1]);
+        }
+    }
+    // draw points
+    for (let i=0; i<pts.length; i++) {
+        stroke(color[0], color[1], color[2], 255);
+        circle(pts[i][0], pts[i][1], w/100);
+    }
+    // update points
+    for (let i=0; i<pts.length; i++) {
+        pts[i][0] += pts[i][2];
+        pts[i][1] += pts[i][3];
+        if (pts[i][0] < 0 || pts[i][0] > w) {
+            pts[i][2] *= -1;
+        }
+        if (pts[i][1] < 0 || pts[i][1] > h) {
+            pts[i][3] *= -1;
+        }
+    }
+    frameRate(30);
+}
+
+function mousePressed() {
+    if (viz == -1) {
+        pts.push([mouseX, mouseY, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+        pts.shift();
+    }
+}
+
+let viz = -1;
+function toggleViz() {
+    viz *= -1;
+    if (viz == 1) {
+        document.getElementById("toggle-img").src = "img/graph.png";
+    }
+    else {
+        document.getElementById("toggle-img").src = "img/conway.png";
+    }
+}
+
+function draw() {
+    if (viz == 1) {
+        conway();
+    }
+    else {
+        graph();
+    }
+}
+
 function windowResized() {
     w = window.innerWidth * 0.97;
     h = window.innerHeight;
@@ -99,4 +170,9 @@ function windowResized() {
         patternX = 10;
     }
     setPattern();
+
+    pts = [];
+    for (let i=0; i<init_pts; i++) {
+        pts.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+    }
 }
