@@ -88,11 +88,33 @@ function conway() {
 
 /* GRAPH */
 let color = [8, 71, 100];
-let init_pts = 20;
+let init_pts = 25;
 let pts = [];
-for (let i=0; i<init_pts; i++) {
-    pts.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+
+function mitchell() {
+    // mitchell best-candidate algorithm
+    for (let i=0; i<init_pts; i++) {
+        let candidates = [];
+        for (let j=0; j<10; j++) {
+            candidates.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+        }
+        let best = candidates[0];
+        let best_dist = 0;
+        for (let j=0; j<candidates.length; j++) {
+            let dist = Infinity;
+            for (let pt of pts) {
+                dist = Math.min(dist, Math.sqrt((candidates[j][0] - pt[0])**2 + (candidates[j][1] - pt[1])**2));
+            }
+            if (dist > best_dist) {
+                best_dist = dist;
+                best = candidates[j];
+            }
+        }
+        pts.push(best);
+    }
 }
+
+mitchell();
 
 function graph() {
     clear();
@@ -172,7 +194,5 @@ function windowResized() {
     setPattern();
 
     pts = [];
-    for (let i=0; i<init_pts; i++) {
-        pts.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
-    }
+    mitchell();
 }
