@@ -22,7 +22,7 @@ html, body {
     padding: 0;
     color: var(--text);
     background: var(--background);
-    font-family:Poppins, 'Segoe UI', sans-serif;
+    font-family: Inter, 'Segoe UI', sans-serif;
     font-size: 14pt;
     scroll-behavior: smooth;
 }
@@ -49,7 +49,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 40%;
+    margin-right: 30%;
     position: relative;
 }
 
@@ -120,17 +120,17 @@ html, body {
 
 /* Main Content */
 p {
-    font-size: 16pt;
+    font-size: 18pt;
 }
 a {
     color: var(--accent);
     text-decoration: none;
     text-shadow: 0px 0px 10px var(--secondary);
-    
+    font-family: Poppins, sans-serif;
     cursor: pointer;
     transition: all 0.15s;
-    font-family: Poppins;
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 18pt;
 }
 a:hover {
     color: var(--heading);
@@ -145,12 +145,13 @@ hr {
     box-shadow: 0px 0px 10px var(--secondary);
 }
 h1 {
-    font-family: "Rockwell";
-    font-weight: lighter;
-    text-shadow: 0px 0px 20px var(--accent);
-    font-size: 50pt;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    text-shadow: 0px 0px 50px var(--accent);
+    font-size: 70pt;
     transition: all 0.15s;
     color: var(--heading);
+    margin-top: 200px;
 }
 h1:hover {
     text-shadow: 0px 0px 40px var(--text);
@@ -215,6 +216,12 @@ h1:hover {
 .card:hover::before {
     top: 12px;
     left: 12px;
+}
+@media screen and (max-width: 800px) {
+    .card:hover {
+        top: 0px;
+        left: 0px;
+    }
 }
 .card .card-img{
     width:calc(100% + 4px);

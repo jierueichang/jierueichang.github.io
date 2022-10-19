@@ -115,7 +115,7 @@ let app2 = new Vue(
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Student, Mentor',
-                description: "Selected for PACT, a series of courses in theoretical computer science sponsored by the NSF; mentored other students on problem sets.",
+                description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; mentored other students on problem sets.",
                 link: 'algorithmicthinking.org/'
             },
             {
@@ -143,16 +143,32 @@ let achievements = new Vue({
     data: {
         items: [
             {
-                name: "Competitive Programming",
-                description: "USACO Gold (Top 5% pre-college)<br><br>2nd place at Lockheed Martin CodeQuest, 2nd place at UPenn's PClassic 2022, Top 7% at Lexington Informatics Tournament",
+                name: "USA Computing Olympiad",
+                description: "USACO Gold (Top 5% pre-college)",
             },
             {
-                name: "Hackathons",
+                name: "Lockheed Martin CodeQuest",
+                description: "Won 2nd Place in the advanced division, out of 200+ teams",
+            },
+            {
+                name: "Philadelphia Classic",
+                description: "Won 2nd place in UPenn's Philadelphia Classic, a competitive programming tournament",
+            },
+            {
+                name: "Lexington Informatics Tournament",
+                description: "Placed in the top 7% at Lexington's annual computer science tournament",
+            },
+            {
+                name: "HackPHS 2021",
                 description: "1st Place and Best Hardware Hack at HackPHS 2021 with 300+ competitors",
             },
             {
-                name: "Mathematics Competitions",
-                description: "PUMaC 2021: 1st (Team), Top 10 (Number Theory)<br><br>Qualified for AIME in 2021",
+                name: "PUMaC 2021",
+                description: "1st in Team division, 8th in Number Theory at Princeton University Mathematics Competition",
+            },
+            {
+                name: "AIME Qualifier",
+                description: "In 2021, qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
             },
             {
                 name: "Violin",
