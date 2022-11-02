@@ -115,7 +115,7 @@ let app2 = new Vue(
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Student, Mentor',
-                description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; mentored other students on problem sets.",
+                description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; graded problem sets and mentored students",
                 link: 'algorithmicthinking.org/'
             },
             {
@@ -148,15 +148,15 @@ let achievements = new Vue({
             },
             {
                 name: "Lockheed Martin CodeQuest",
-                description: "Won 2nd Place in the advanced division, out of 200+ teams",
+                description: "2nd Place in the advanced division, out of 200+ teams",
+            },
+            {
+                name: "Robocup Junior",
+                description: "2nd Place in the 2022 Robocup Junior National Championship (Soccer Lightweight Division)",
             },
             {
                 name: "Philadelphia Classic",
-                description: "Won 2nd place in UPenn's Philadelphia Classic, a competitive programming tournament",
-            },
-            {
-                name: "Lexington Informatics Tournament",
-                description: "Placed in the top 7% at Lexington's annual computer science tournament",
+                description: "2nd place in UPenn's Philadelphia Classic, a competitive programming tournament",
             },
             {
                 name: "HackPHS 2021",
@@ -167,7 +167,7 @@ let achievements = new Vue({
                 description: "1st in Team division, 8th in Number Theory at Princeton University Mathematics Competition",
             },
             {
-                name: "AIME Qualifier",
+                name: "AIME",
                 description: "In 2021, qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
             },
             {
