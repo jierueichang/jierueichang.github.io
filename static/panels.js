@@ -21,6 +21,17 @@ let app1 = new Vue(
     {
         projects: [
             {
+                name: "CPT Practice Platform",
+                description: "Platform for practicing competitive programming with 1000+ solution submissions",
+                link: "phscpt.pythonanywhere.com",
+                image: "cptplatform.png"
+            },
+            {
+                name: "Radian",
+                description: "Autonomous soccer robot with infrared ball tracking, PID angle correction, scoring algorithms, line avoidance, goal keeping, and computer vision-based goal detection",
+                image: "radian.png"
+            },
+            {
                 name: "USACO",
                 description: "Solutions and explanations for competitive programming problems",
                 link: "knosmos.github.io/usaco",
@@ -113,6 +124,12 @@ let app2 = new Vue(
                 link: 'sites.google.com/view/phsmathteam/home'
             },
             {
+                name: 'HackPHS 2022',
+                subtitle: 'Tech Officer',
+                description: "Created website to attract 200+ hackathon participants from New Jersey, New York, and Maryland; developed minimum arc feedback set and topological-sort based judging system to create an unbiased ranking with a limited number of judges",
+                link: 'hackphs.tech'
+            },
+            {
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Student, Mentor',
                 description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; graded problem sets and mentored students",
@@ -147,11 +164,15 @@ let achievements = new Vue({
                 description: "USACO Gold (Top 5% pre-college)",
             },
             {
+                name: "2x AIME Qualifier",
+                description: "In 2021 and 2022, I qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
+            },
+            {
                 name: "Lockheed Martin CodeQuest",
                 description: "2nd Place in the advanced division, out of 200+ teams",
             },
             {
-                name: "Robocup Junior",
+                name: "U.S. Robocup Junior",
                 description: "2nd Place in the 2022 Robocup Junior National Championship (Soccer Lightweight Division)",
             },
             {
@@ -166,10 +187,7 @@ let achievements = new Vue({
                 name: "PUMaC 2021",
                 description: "1st in Team division, 8th in Number Theory at Princeton University Mathematics Competition",
             },
-            {
-                name: "AIME",
-                description: "In 2021, qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
-            },
+
             {
                 name: "Violin",
                 description: "Winner of Achievement (2022), Scholarship (2017) and Concerto (2019) competitions at Westminster Conservatory",
