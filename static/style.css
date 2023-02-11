@@ -49,13 +49,12 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 30%;
+    margin-right: 20%;
     position: relative;
 }
 
 #heading-image {
     width: 100%;
-    margin: 0% 0% 20px;
     filter: drop-shadow(0px 0px 10px var(--secondary));
 }
 
@@ -65,7 +64,9 @@ html, body {
 }
 
 .links {
-    display: contents;
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 
 .links a {
@@ -118,6 +119,72 @@ html, body {
     }
 }
 
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#selfie {
+    position: relative;
+}
+
+#selfie img {
+    width: 100%;
+    filter: drop-shadow(0px 0px 50px var(--secondary)) saturate(0.8);
+    border-radius: 100%;
+    border: 2px solid var(--accent);
+}
+
+#circle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+#hexagon-wrapper {
+    display: block;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+#hexagon {
+    stroke: var(--accent);
+    stroke-width: 6px;
+    fill: none;
+}
+
+@media screen and (max-width:800px) {
+    .intro-grid {
+        display: block;
+    }
+    #selfie {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Main Content */
 p {
     font-size: 18pt;
@@ -168,10 +235,19 @@ h1:hover {
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
     gap:50px;
     width:100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.card-grid-lg{
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    position: relative;
 }
 @media screen and (max-width: 800px) {
-    .card-grid{
+    .card-grid, .card-grid-lg{
         gap: 20px;
+        display: block;
     }
 }
 @media screen and (max-width: 500px) {
@@ -197,6 +273,21 @@ h1:hover {
     position: relative;
     top: 0px;
     left: 0px;
+}
+.card-grid-lg .card {
+    width: 50%;
+    margin: 30px;
+    display: inline-block;
+}
+.card-grid-g .card:nth-child(2n) {
+    float: left;
+    margin-left: 0px;
+    clear: left;
+}
+.card-grid-g .card:nth-child(2n+1) {
+    float: right;
+    margin-right: 0px;
+    clear: right;
 }
 .card:hover {
     /*box-shadow:0px 0px 20px var(--secondary);*/
@@ -235,6 +326,9 @@ h1:hover {
     top:-2px;
     position:relative;
     transform: all 0.5s;
+}
+.card-grid-lg .card .card-img {
+    height: 300px;
 }
 .card-body {
     padding: 15px;

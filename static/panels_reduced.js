@@ -50,12 +50,6 @@ let app1 = new Vue(
                 image: "setsolve.png"
             },
             {
-                name: "Daybreak",
-                description: "Play an AI hacking yourself out of a computer",
-                link: "knosmos.github.io/daybreak",
-                image: "daybreak.png"
-            },
-            {
                 name: "SudokuGen",
                 description: "Sudoku puzzle PDF generator",
                 link: "github.com/knosmos/sudoku-gen",
@@ -107,18 +101,6 @@ let app2 = new Vue(
                 description: "Teach competitive programming to 15 members weekly and compete in national tournaments",
                 link: 'phscpt.github.io'
             },
-            /*
-            {
-                name: 'Applied Computing and Multimedia Lab',
-                subtitle: 'Special Research Group Member',
-                description: 'Research and develop models for anomaly detection in audio data using normalizing flow- and autoencoder-based neural network architectures at National Yang Ming Chiao Tung University',
-                link: 'acm.cs.nctu.edu.tw/'
-            },
-            {
-                name: 'Princeton Autonomous Vehicle Engineering',
-                subtitle: 'Computer Vision Specialist, Systems Engineer',
-                description: 'Design computer vision models for autonomous electric boat navigation at Princeton University',
-            },*/
             {
                 name: 'Princeton Soccer Robotics',
                 subtitle: 'Vice President, Software Lead',
@@ -142,24 +124,16 @@ let app2 = new Vue(
                 description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; graded problem sets and mentored students",
                 link: 'algorithmicthinking.org/'
             },
-            /*
             {
                 name: 'Maker Faire',
                 description: "Demoed electronics projects at Maker Faire New York in <a href='https://makerfaire.com/maker/entry/63428/' style='display:inline-block;font-size:14pt'>2017</a> and <a href='https://makerfaire.com/maker/entry/67542/' style='display:inline-block;font-size:14pt'>2018</a>",
                 link: 'makerfaire.com'
-            },*/
+            },
             {
                 name: 'Music After School',
                 subtitle: 'Mentor',
                 description: "Teach music theory and violin to elementary school students"
-            },
-            /*
-            {
-                name: 'Kickside Martial Arts',
-                subtitle: 'Instructor',
-                description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
-                link: 'kicksidema.com/'
-            }*/
+            }
         ]
     }
 });
@@ -196,11 +170,6 @@ let achievements = new Vue({
                 name: "PUMaC 2021",
                 description: "1st in Team division, 8th in Number Theory at Princeton University Mathematics Competition",
             },
-
-            {
-                name: "Violin",
-                description: "Winner of Achievement (2022), Scholarship (2017) and Concerto (2019) competitions at Westminster Conservatory",
-            }
         ]
     }
 });
