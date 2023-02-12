@@ -22,18 +22,18 @@ let app1 = new Vue(
         projects: [
             {
                 name: "CPT Practice Platform",
-                description: "Platform for practicing competitive programming with 1000+ solution submissions",
+                description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
                 link: "phscpt.pythonanywhere.com",
                 image: "cptplatform.png"
             },
             {
                 name: "Radian",
-                description: "Autonomous soccer robot with infrared ball tracking, PID angle correction, scoring algorithms, line avoidance, goal keeping, and computer vision-based goal detection",
+                description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
                 image: "radian.png"
             },
             {
                 name: "USACO",
-                description: "Solutions and explanations for competitive programming problems",
+                description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
                 link: "knosmos.github.io/usaco",
                 image: "usaco.png"
             },
@@ -56,20 +56,14 @@ let app1 = new Vue(
                 image: "daybreak.png"
             },
             {
-                name: "SudokuGen",
-                description: "Sudoku puzzle PDF generator",
-                link: "github.com/knosmos/sudoku-gen",
-                image: "sudoku2.png"
-            },
-            {
                 name: "TL;DS",
-                description: "Math solver with OCR and handwriting capability",
+                description: "Winner of HackPHS 2021: Math solver with OCR and handwriting capability",
                 link: "github.com/knosmos/tlds",
                 image: "tlds.jpg"
             },
             {
                 name: "Rhythmvision",
-                description: "Rhythm game with pose estimation",
+                description: "Rhythm game with browser ML-driven pose estimation",
                 link: "knosmos.github.io/rhythmvision",
                 image: "rhythmvision3.png"
             },
@@ -81,7 +75,7 @@ let app1 = new Vue(
             },
             {
                 name: "CMDPXL",
-                description: "Terminal-based image editor",
+                description: "Terminal-based image editor, featured by GitHub",
                 link: "github.com/knosmos/cmdpxl",
                 image: "cmdpxl.png"
             },
@@ -90,7 +84,13 @@ let app1 = new Vue(
                 description: "The classic online multiplayer card game ripoff",
                 link: "knosmos.github.io/tres",
                 image: "tres.png"
-            }
+            },
+            {
+                name: "SudokuGen",
+                description: "Sudoku puzzle PDF generator",
+                link: "github.com/knosmos/sudoku-gen",
+                image: "sudoku2.png"
+            },
         ]
     }
 });
