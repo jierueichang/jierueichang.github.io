@@ -14,7 +14,7 @@ Vue.component('panel-list', {
     </div>`
 });
 
-let app1 = new Vue(
+let proj = new Vue(
 {
     el: '#projects-grid',
     data:
@@ -44,7 +44,7 @@ let app1 = new Vue(
                 image: "wordle_thumb.png"
             },
             {
-                name: "Set-Solve",
+                name: "Ready Set Solve",
                 description: "Playing the card game SET with computer vision",
                 link: "github.com/knosmos/set-solve",
                 image: "setsolve.png"
@@ -95,7 +95,7 @@ let app1 = new Vue(
     }
 });
 
-let app2 = new Vue(
+let exp = new Vue(
 {
     el: '#experience-grid',
     data:
@@ -204,6 +204,7 @@ let achievements = new Vue({
         ]
     }
 });
+
 
 let footer = new Vue({
     el: '#footer',
