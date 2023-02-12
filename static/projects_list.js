@@ -158,7 +158,7 @@ let proj = new Vue({
                     {
                         name: "Reaction Map",
                         description: "Express sentences as driving directions with fuzzy matching",
-                        link: "https://github.com/knosmos/reaction-map",
+                        link: "github.com/knosmos/reaction-map",
                         image: "reaction.jpg"
                     },
                 ]

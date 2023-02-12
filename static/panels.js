@@ -85,11 +85,18 @@ let proj = new Vue(
                 link: "knosmos.github.io/tres",
                 image: "tres.png"
             },
+            /*
             {
                 name: "SudokuGen",
                 description: "Sudoku puzzle PDF generator",
                 link: "github.com/knosmos/sudoku-gen",
                 image: "sudoku2.png"
+            },*/
+            {
+                name: "Arbiter",
+                description: "Hackathon judging system with graph theory based ranking algorithm",
+                link: "github.com/knosmos/arbiter",
+                image: "arbiter.png"
             },
         ]
     }
