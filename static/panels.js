@@ -111,7 +111,7 @@ let exp = new Vue(
             {
                 name: 'PHS Competitive Programming Team',
                 subtitle: 'Co-Founder',
-                description: "Teach competitive programming to 15 members weekly and compete in national tournaments",
+                description: "Teach competitive programming to 30+ members weekly and compete in national tournaments",
                 link: 'phscpt.github.io'
             },
             /*
@@ -129,7 +129,7 @@ let exp = new Vue(
             {
                 name: 'Princeton Soccer Robotics',
                 subtitle: 'Vice President, Software Lead',
-                description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms",
+                description: "Integrate complex hardware and software, design intelligent robot sensing and movement algorithms",
                 link: 'soccer-robotics.github.io/'
             },
             {
