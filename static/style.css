@@ -268,7 +268,7 @@ h2 {
     color:var(--text);
     background-color: var(--background);
     transition: all 0.2s;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 2px solid var(--secondary);
     display: block;
     z-index: 0;
@@ -321,7 +321,7 @@ h2 {
 .card .card-img{
     width:calc(100% + 4px);
     height:150px;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
     background-size:cover;
     background-position:center;
     border: 2px solid var(--secondary);
@@ -329,7 +329,7 @@ h2 {
     left:-2px;
     top:-2px;
     position:relative;
-    transform: all 0.5s;
+    transform: left 0.5s right 0.5s !important;
 }
 .card-grid-lg .card .card-img {
     height: 300px;
@@ -386,4 +386,13 @@ h2 {
 .footer {
     color: var(--secondary);
     background-image: url("../assets/background.png");
+}
+
+/*AOS*/
+[data-aos="fade-out"] {
+    opacity: 1;
+    transition-property: opacity;
+    &.aos-animate {
+      opacity: 0;
+    }
 }

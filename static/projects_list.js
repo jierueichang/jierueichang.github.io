@@ -5,13 +5,15 @@ Vue.component('panel-list', {
         <div v-for="year in years">
             <h2>{{ year.year }}</h2>
             <div class="card-grid">
-                <div class="card" v-for="panel in year.projects">
-                    <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
-                    <div class="card-body">
-                        <a v-bind:href="'http://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
-                        <a v-if="!panel.link">{{ panel.name }}</a>
-                        <p v-if="panel.subtitle" style="color: gray; margin: 5px 0px">{{ panel.subtitle }}</p>
-                        <p v-html = "panel.description"></p>
+                <div v-for="panel in year.projects" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                    <div class="card">
+                        <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+                        <div class="card-body">
+                            <a v-bind:href="'http://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
+                            <a v-if="!panel.link">{{ panel.name }}</a>
+                            <p v-if="panel.subtitle" style="color: gray; margin: 5px 0px">{{ panel.subtitle }}</p>
+                            <p v-html = "panel.description"></p>
+                        </div>
                     </div>
                 </div>
             </div>

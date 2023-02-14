@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Hi! I'm Jieruei. I enjoy competitive programming, web development and making things with computer vision and machine learning.">
         <title>Jieruei Chang (@knosmos)</title>
@@ -22,7 +24,7 @@
             <div class="header">
                 <div class="intro-grid">
                     <div class="vertical-flex">
-                        <div id="selfie">
+                        <div id="selfie" data-aos="zoom-out-right">
                             <img src="img/selfie_joke.jpg">
                             <div id="circle"></div>
                             <svg id="hexagon-wrapper" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -31,11 +33,11 @@
                         </div>
                     </div>
                     <div>
-                        <img src="assets/heading-small-alt2.png" id="heading-image" alt="Jieruei Chang">
-                        <div id="introduction">
+                        <img src="assets/heading-small-alt2.png" id="heading-image" alt="Jieruei Chang" data-aos="zoom-out-left">
+                        <div id="introduction" data-aos="zoom-out-left">
                             <p>Hi! I'm Jieruei. I enjoy competitive programming, web development, and making things with computer vision and machine learning.</p>
                         </div>
-                        <div class="links">
+                        <div class="links" data-aos="zoom-out-left">
                             <a href="#experience">[experience]</a>
                             <a href="#projects">[projects]</a>
                             <!--<a href="#achievements">[achievements]</a>-->
@@ -48,12 +50,12 @@
             <div class="main-content">
                 <div id="experience">
                     <a name="experience"></a>
-                    <h1>experience<span style="color:var(--accent)">.</span></h1>
+                    <h1 data-aos="zoom-in">experience<span style="color:var(--accent)">.</span></h1>
                     <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
                 </div>
                 <div id="projects">
                     <a name="projects"></a>
-                    <h1>projects<span style="color:var(--accent)">.</span></h1>
+                    <h1 data-aos="zoom-in">projects<span style="color:var(--accent)">.</span></h1>
                     <p>I'm always working on something new. Here are some of the things I've made.</p>
                     <a href="projects.html" target="_blank">[View all projects]</a>
                     <a href="https://github.com/knosmos?tab=repositories" target="_blank">[Github]</a>
@@ -68,7 +70,7 @@
                 </div>-->
                 <div id="contact">
                     <a name="contact"></a>
-                    <h1>contact<span style="color:var(--accent)">.</span></h1>
+                    <h1 data-aos="zoom-in">contact<span style="color:var(--accent)">.</span></h1>
                     <div id="contact-content" class="links">
                         <a href="mailto:jierueic@gmail.com" target="_blank">[email]</a>
                         <a href="https://github.com/knosmos" target="_blank">[github]</a>
@@ -90,5 +92,9 @@
         <script src="static/viz.js"></script>
         <script src="static/konami.js"></script>
         <script src="static/mouse.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
