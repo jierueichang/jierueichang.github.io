@@ -114,7 +114,8 @@ let exp = new Vue(
                 name: 'PHS Competitive Programming Team',
                 subtitle: 'Co-Founder',
                 description: "Teach competitive programming to 30+ members weekly and compete in national tournaments",
-                link: 'phscpt.github.io'
+                link: 'phscpt.github.io',
+                image: 'cpt.png'
             },
             /*
             {
@@ -130,26 +131,30 @@ let exp = new Vue(
             },*/
             {
                 name: 'Princeton Soccer Robotics',
-                subtitle: 'Vice President, Software Lead',
+                subtitle: 'Captain, Software Lead',
                 description: "Integrate complex hardware and software, design intelligent robot sensing and movement algorithms",
-                link: 'soccer-robotics.github.io/'
+                link: 'soccer-robotics.github.io/',
+                image: 'psr.jpg'
             },
             {
                 name: 'PHS Math Team',
                 description: "Solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC, CMIMC and PUMaC",
-                link: 'sites.google.com/view/phsmathteam/home'
+                link: 'sites.google.com/view/phsmathteam/home',
+                image: 'math_TEMP.jpg'
             },
             {
                 name: 'HackPHS 2022',
                 subtitle: 'Tech Officer',
                 description: "Created website to attract 200+ hackathon participants from New Jersey, New York, and Maryland; developed minimum arc feedback set and topological-sort based judging system to create an unbiased ranking with a limited number of judges",
-                link: 'hackphs.tech'
+                link: 'hackphs.tech',
+                image: 'hackphs.jpg'
             },
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
-                subtitle: 'Student, Mentor',
+                subtitle: 'Mentor',
                 description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; graded problem sets and mentored students",
-                link: 'algorithmicthinking.org/'
+                link: 'algorithmicthinking.org/',
+                image: 'pact.png'
             },
             /*
             {
@@ -160,7 +165,8 @@ let exp = new Vue(
             {
                 name: 'Music After School',
                 subtitle: 'Mentor',
-                description: "Teach music theory and violin to elementary school students"
+                description: "Teach music theory and violin to elementary school students",
+                image: 'music.jpg'
             },
             /*
             {

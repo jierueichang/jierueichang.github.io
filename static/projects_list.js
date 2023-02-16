@@ -3,7 +3,7 @@ Vue.component('panel-list', {
     template: `
     <div>
         <div v-for="year in years">
-            <h2>{{ year.year }}</h2>
+            <h2 data-aos="zoom-in">{{ year.year }}</h2>
             <div class="card-grid">
                 <div v-for="panel in year.projects" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
                     <div class="card">

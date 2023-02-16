@@ -56,9 +56,11 @@
                 <div id="projects">
                     <a name="projects"></a>
                     <h1 data-aos="zoom-in">projects<span style="color:var(--accent)">.</span></h1>
-                    <p>I'm always working on something new. Here are some of the things I've made.</p>
-                    <a href="projects.html" target="_blank">[View all projects]</a>
-                    <a href="https://github.com/knosmos?tab=repositories" target="_blank">[Github]</a>
+                    <p data-aos="zoom-in">I'm always working on something new. Here are some of the things I've made.</p>
+                    <div data-aos="zoom-in">
+                        <a href="projects.html" target="_blank">[View all projects]</a>
+                        <a href="https://github.com/knosmos?tab=repositories" target="_blank">[Github]</a>                        
+                    </div>
                     <br><br>
                     <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
                 </div>
@@ -71,7 +73,7 @@
                 <div id="contact">
                     <a name="contact"></a>
                     <h1 data-aos="zoom-in">contact<span style="color:var(--accent)">.</span></h1>
-                    <div id="contact-content" class="links">
+                    <div id="contact-content" class="links" data-aos="zoom-in">
                         <a href="mailto:jierueic@gmail.com" target="_blank">[email]</a>
                         <a href="https://github.com/knosmos" target="_blank">[github]</a>
                         <!--<a target="_blank">[linkedin]</a>-->
@@ -80,7 +82,7 @@
             </div>
             <br><br><br><br><br>
             <hr>
-            <div class="footer" id="footer">
+            <div class="footer" id="footer" data-aos="zoom-in">
                 <a href="#top">⇧ back to top</a>
                 <p>copyright © {{ currentYear }} Jieruei Chang</p>
                 <p>built with <a href="https://vuejs.org/" target="_blank">vue</a> and <a href="https://p5js.org/" target="_blank">p5.js</a></p>
@@ -94,6 +96,10 @@
         <script src="static/mouse.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
+            /*AOS.init({
+                duration: 500,
+                once: true
+            });*/
             AOS.init();
         </script>
     </body>
