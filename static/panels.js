@@ -138,6 +138,7 @@ let exp = new Vue(
             },
             {
                 name: 'PHS Math Team',
+                subtitle: 'Lecturer',
                 description: "Solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC, CMIMC and PUMaC",
                 link: 'sites.google.com/view/phsmathteam/home',
                 image: 'math_TEMP.jpg'

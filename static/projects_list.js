@@ -46,6 +46,18 @@ let proj = new Vue({
                         link: "knosmos.github.io/daybreak",
                         image: "daybreak.png"
                     },
+                    {
+                        name: "Isotoma",
+                        description: "Online TikZ GUI vector-based graphics editor",
+                        link: "knosmos.github.io/isotoma",
+                        image: "isotoma.png"
+                    },
+                    {
+                        name: "YesYesGram",
+                        description: "Automated Nonogram logic puzzle solver with Selenium",
+                        link: "github.com/knosmos/yesyesgram",
+                        image: "yesyesgram.png"
+                    }
                 ]
             },
             {
@@ -123,7 +135,7 @@ let proj = new Vue({
                     },
                     {
                         name: "Scribblebot",
-                        description: "contour-detecting autodraw bot",
+                        description: "Contour-detecting autodraw bot with OpenCV and PyAutoGUI",
                         link: "github.com/knosmos/scribblebot",
                         image: "scribblebot.png"
                     },
@@ -135,7 +147,7 @@ let proj = new Vue({
                     },
                     {
                         name: "Tres",
-                        description: "The classic online multiplayer card game ripoff",
+                        description: "The classic online multiplayer card game ripoff, built with Flask",
                         link: "knosmos.github.io/tres",
                         image: "tres.png"
                     },
@@ -207,7 +219,7 @@ let proj = new Vue({
                     {
                         name: "Clearing the Skies",
                         link: "locus-lab.github.io/insertnamehere",
-                        image: "clearingskies.jpg",
+                        image: "clearingskies2.png",
                         description: "Rebuild civilization after a nuclear apocalypse"
                     }
                 ]
