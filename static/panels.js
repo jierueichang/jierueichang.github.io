@@ -30,8 +30,11 @@ let proj = new Vue(
             },
             {
                 name: "Radian",
-                description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
-                image: "radian.png"
+                description: "1st Place at USA Robocup Junior: autonomous soccer robot with IR ball tracking, PID angle correction, intelligent scoring and defense algorithms, solenoid driven kicker",
+                image: "radian_2023.jpg",
+                link: "soccer-robotics.github.io"
+                /*description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
+                image: "radian.png"*/
             },
             {
                 name: "USACO",
@@ -131,10 +134,10 @@ let exp = new Vue(
             },*/
             {
                 name: 'Princeton Soccer Robotics',
-                subtitle: 'Captain, Software Lead',
-                description: "Integrate complex hardware and software, design intelligent robot sensing and movement algorithms",
+                subtitle: 'Captain',
+                description: "Integrate complex hardware and software, design intelligent robot sensing and movement algorithms; 3D model robot chassis and design custom PCBs",
                 link: 'soccer-robotics.github.io/',
-                image: 'psr.jpg'
+                image: 'radian_team_2.jpg'
             },
             {
                 name: 'PHS Math Team',
