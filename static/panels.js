@@ -118,7 +118,7 @@ let exp = new Vue(
                 subtitle: 'Co-Founder',
                 description: "Teach competitive programming to 30+ members weekly and compete in national tournaments",
                 link: 'phscpt.github.io',
-                image: 'cpt.png'
+                image: 'cpt2.png'
             },
             /*
             {
@@ -193,15 +193,15 @@ let achievements = new Vue({
             },
             {
                 name: "2x AIME Qualifier",
-                description: "In 2021 and 2022, I qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
+                description: "In 2021 and 2022, qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
             },
             {
                 name: "Lockheed Martin CodeQuest",
-                description: "2nd Place in the advanced division, out of 200+ teams",
+                description: "1st Place in the advanced division internationally, out of 200+ teams",
             },
             {
                 name: "U.S. Robocup Junior",
-                description: "2nd Place in the 2022 Robocup Junior National Championship (Soccer Lightweight Division)",
+                description: "1st Place in the 2023 Robocup Junior National Championship; selected as USA representative in international competition (Soccer Lightweight Division)",
             },
             {
                 name: "Philadelphia Classic",
