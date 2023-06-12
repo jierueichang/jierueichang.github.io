@@ -96,7 +96,7 @@ function mitchell() {
     for (let i=0; i<init_pts; i++) {
         let candidates = [];
         for (let j=0; j<10; j++) {
-            candidates.push([Math.random() * w, Math.random() * h, Math.random() * 10 - 5, Math.random() * 10 - 5]);
+            candidates.push([Math.random() * w, Math.random() * h, Math.random() * 20 - 10, Math.random() * 20 - 10]);
         }
         let best = candidates[0];
         let best_dist = 0;
@@ -123,14 +123,16 @@ function graph() {
     for (let i=0; i<pts.length; i++) {
         for (let j=i+1; j<pts.length; j++) {
             let dist = Math.sqrt((pts[i][0] - pts[j][0]) ** 2 + (pts[i][1] - pts[j][1]) ** 2);
-            stroke(color[0], color[1], color[2], 255 / ((dist-1)/(w/10) + 0.0001));
-            line(pts[i][0], pts[i][1], pts[j][0], pts[j][1]);
+            if (dist < w/4) {
+                stroke(color[0], color[1], color[2], 255 / ((dist-1)/(w/10) + 0.0001));
+                line(pts[i][0], pts[i][1], pts[j][0], pts[j][1]);
+            }
         }
     }
     // draw points
     for (let i=0; i<pts.length; i++) {
         stroke(color[0], color[1], color[2], 255);
-        circle(pts[i][0], pts[i][1], w/100);
+        circle(pts[i][0], pts[i][1], w/150);
     }
     // update points
     for (let i=0; i<pts.length; i++) {
