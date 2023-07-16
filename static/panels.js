@@ -23,18 +23,18 @@ let proj = new Vue(
     {
         projects: [
             {
-                name: "CPT Practice Platform",
-                description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
-                link: "phscpt.pythonanywhere.com",
-                image: "cptplatform.png"
-            },
-            {
                 name: "Radian",
-                description: "1st Place at USA Robocup Junior: autonomous soccer robot with IR ball tracking, PID angle correction, intelligent scoring and defense algorithms, solenoid driven kicker",
+                description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with IR ball tracking, PID angle correction, intelligent scoring and defense algorithms, solenoid driven kicker",
                 image: "radian_2023.jpg",
                 link: "soccer-robotics.github.io"
                 /*description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
                 image: "radian.png"*/
+            },
+            {
+                name: "CPT Practice Platform",
+                description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
+                link: "phscpt.pythonanywhere.com",
+                image: "cptplatform.png"
             },
             {
                 name: "USACO",
