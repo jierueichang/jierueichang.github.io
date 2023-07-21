@@ -29,6 +29,12 @@ let proj = new Vue({
                 year: "2023",
                 projects: [
                     {
+                        name: "Radian",
+                        description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
+                        image: "radian_2023.jpg",
+                        link: "soccer-robotics.github.io"
+                    },
+                    {
                         name: "CPT Practice Platform",
                         description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
                         link: "phscpt.pythonanywhere.com",
@@ -39,6 +45,12 @@ let proj = new Vue({
                         description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
                         link: "knosmos.github.io/usaco",
                         image: "usaco.png"
+                    },
+                    {
+                        name: "The Tower Online",
+                        description: "Online edition of the PHS student newspaper, built with Next.js and Supabase",
+                        link: "towerphs.com",
+                        image: "tower.png"
                     },
                     {
                         name: "Daybreak",
@@ -64,7 +76,7 @@ let proj = new Vue({
                 year: "2022",
                 projects: [
                     {
-                        name: "Radian",
+                        name: "Radian 2022",
                         description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
                         image: "radian.png"
                     },
@@ -88,7 +100,7 @@ let proj = new Vue({
                     },
                     {
                         name: "HackPHS Website 2022",
-                        description: "Website for HackPHS 2022, a 24-hour hackathon with 300+ participants",
+                        description: "Website for HackPHS 2022, a 24-hour hackathon with 200+ participants",
                         link: "hackphs.tech",
                         image: "hackphs.png"
                     },

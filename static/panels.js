@@ -24,7 +24,7 @@ let proj = new Vue(
         projects: [
             {
                 name: "Radian",
-                description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with IR ball tracking, PID angle correction, intelligent scoring and defense algorithms, solenoid driven kicker",
+                description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
                 image: "radian_2023.jpg",
                 link: "soccer-robotics.github.io"
                 /*description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
@@ -32,7 +32,7 @@ let proj = new Vue(
             },
             {
                 name: "CPT Practice Platform",
-                description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
+                description: "Platform for practicing competitive programming with custom-written problems, 1000+ solution submissions, and 15k+ monthly page views",
                 link: "phscpt.pythonanywhere.com",
                 image: "cptplatform.png"
             },
@@ -44,13 +44,13 @@ let proj = new Vue(
             },
             {
                 name: "Robowordle",
-                description: "Using computer vision and a 3D printer to play a phone-based word game",
+                description: "Using computer vision and a 3D printer to robotically play a phone-based word game",
                 link: "github.com/knosmos/robowordle",
                 image: "wordle_thumb.png"
             },
             {
                 name: "Ready Set Solve",
-                description: "Playing the card game SET with computer vision",
+                description: "Playing the card game SET with computer vision, using homography perspective correction, contour moments, and Sobel edge detection",
                 link: "github.com/knosmos/set-solve",
                 image: "setsolve.png"
             },
@@ -74,13 +74,13 @@ let proj = new Vue(
             },
             {
                 name: "Scribblebot",
-                description: "contour-detecting autodraw bot",
+                description: "Contour-detecting autodraw bot to better mimic human drawing",
                 link: "github.com/knosmos/scribblebot",
                 image: "scribblebot.png"
             },
             {
                 name: "CMDPXL",
-                description: "Terminal-based image editor, featured by GitHub",
+                description: "Terminal-based image and pixel art editor, featured by GitHub",
                 link: "github.com/knosmos/cmdpxl",
                 image: "cmdpxl.png"
             },
@@ -99,7 +99,7 @@ let proj = new Vue(
             },*/
             {
                 name: "Arbiter",
-                description: "Hackathon judging system with graph theory based ranking algorithm",
+                description: "Hackathon judging system with ranking algorithm based on minimum feedback arc set problem and topological sorting",
                 link: "github.com/knosmos/arbiter",
                 image: "arbiter.png"
             },
@@ -114,9 +114,9 @@ let exp = new Vue(
     {
         items: [
             {
-                name: 'PHS Competitive Programming Team',
+                name: 'Princeton Competitive Programming Team',
                 subtitle: 'Co-Founder',
-                description: "Teach competitive programming to 30+ members weekly and compete in national tournaments",
+                description: "At PHSCPT I teach competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
                 link: 'phscpt.github.io',
                 image: 'cpt2.png'
             },
@@ -135,28 +135,28 @@ let exp = new Vue(
             {
                 name: 'Princeton Soccer Robotics',
                 subtitle: 'Captain',
-                description: "Integrate complex hardware and software, design intelligent robot sensing and movement algorithms; 3D model robot chassis and design custom PCBs",
+                description: "As captain of PSR and its Lightweight Division team Radian, I integrate intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the Robocup World Championships, the best result for a USA team in at least five years.",
                 link: 'soccer-robotics.github.io/',
                 image: 'radian_team_2.jpg'
             },
             {
                 name: 'PHS Math Team',
-                subtitle: 'Lecturer',
-                description: "Solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC, CMIMC and PUMaC",
+                subtitle: 'Captain',
+                description: "In Math Team, I teach combinatorics, work on challenging problems in individual and team settings, and participate in national competitions including ARML, MMATHS, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
                 link: 'sites.google.com/view/phsmathteam/home',
                 image: 'math_TEMP.jpg'
             },
             {
                 name: 'HackPHS 2022',
                 subtitle: 'Tech Officer',
-                description: "Created website to attract 200+ hackathon participants from New Jersey, New York, and Maryland; developed minimum arc feedback set and topological-sort based judging system to create an unbiased ranking with a limited number of judges",
+                description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
                 link: 'hackphs.tech',
                 image: 'hackphs.jpg'
             },
             {
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Mentor',
-                description: "Accepted to PACT, a series of courses in theoretical computer science sponsored by the NSF; graded problem sets and mentored students",
+                description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
                 link: 'algorithmicthinking.org/',
                 image: 'pact.png'
             },
@@ -169,7 +169,7 @@ let exp = new Vue(
             {
                 name: 'Music After School',
                 subtitle: 'Mentor',
-                description: "Teach music theory and violin to elementary school students",
+                description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past two years I've mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
                 image: 'music.jpg'
             },
             /*
