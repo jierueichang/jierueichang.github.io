@@ -124,7 +124,7 @@ let exp = new Vue(
                 name: 'Applied Computing and Multimedia Lab',
                 subtitle: 'Research Intern',
                 description: 'I\'m working on using semi-supervised techniques to help the diagnosis of respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
-                link: 'acm.cs.nctu.edu.tw/',
+                link: 'jierueichang.github.io/assets/Pulmonary_Auscultation_Analysis.pdf',
                 image: 'research.png'
             },
             {
