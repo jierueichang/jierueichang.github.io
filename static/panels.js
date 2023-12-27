@@ -114,30 +114,32 @@ let exp = new Vue(
     {
         items: [
             {
+                name: 'Princeton Soccer Robotics',
+                subtitle: 'Captain',
+                description: "As captain of PSR and its Lightweight Division team Radian, I integrate intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
+                link: 'soccer-robotics.github.io/',
+                image: 'radian_team_2.jpg'
+            },
+            {
+                name: 'Applied Computing and Multimedia Lab',
+                subtitle: 'Research Intern',
+                description: 'I\'m working on using semi-supervised techniques to help the diagnosis of respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
+                link: 'acm.cs.nctu.edu.tw/',
+                image: 'research.png'
+            },
+            {
                 name: 'Princeton Competitive Programming Team',
                 subtitle: 'Co-Founder',
                 description: "At PHSCPT I teach competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
                 link: 'phscpt.github.io',
                 image: 'cpt2.png'
             },
-            /*
-            {
-                name: 'Applied Computing and Multimedia Lab',
-                subtitle: 'Special Research Group Member',
-                description: 'Research and develop models for anomaly detection in audio data using normalizing flow- and autoencoder-based neural network architectures at National Yang Ming Chiao Tung University',
-                link: 'acm.cs.nctu.edu.tw/'
-            },
             {
                 name: 'Princeton Autonomous Vehicle Engineering',
-                subtitle: 'Computer Vision Specialist, Systems Engineer',
-                description: 'Design computer vision models for autonomous electric boat navigation at Princeton University',
-            },*/
-            {
-                name: 'Princeton Soccer Robotics',
-                subtitle: 'Captain',
-                description: "As captain of PSR and its Lightweight Division team Radian, I integrate intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the Robocup World Championships, the best result for a USA team in at least five years.",
-                link: 'soccer-robotics.github.io/',
-                image: 'radian_team_2.jpg'
+                subtitle: 'GPS/RC + Computer Vision Specialist',
+                description: 'In Princeton University\'s PAVE team I build GPS/remote-control systems and design high-performance computer vision models for autonomous electric boat navigation.',
+                link: 'pave.princeton.edu/',
+                image: 'pave_splash2.png'
             },
             {
                 name: 'PHS Math Team',
@@ -147,10 +149,16 @@ let exp = new Vue(
                 image: 'math_TEMP.jpg'
             },
             {
+                name: 'The Tower Newspaper',
+                subtitle: 'Software Architect',
+                description: 'I build and maintain PHS\'s online student newspaper with over 15k monthly views, and developed an automatic article uploading system to expedite publication turnaround.',
+                image: 'tower_splash.png'
+            },
+            {
                 name: 'HackPHS 2022',
                 subtitle: 'Tech Officer',
                 description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
-                link: 'hackphs.tech',
+                link: 'hackprincetonhs.github.io/hackphs2022/',
                 image: 'hackphs.jpg'
             },
             {

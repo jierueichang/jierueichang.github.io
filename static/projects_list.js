@@ -101,7 +101,7 @@ let proj = new Vue({
                     {
                         name: "HackPHS Website 2022",
                         description: "Website for HackPHS 2022, a 24-hour hackathon with 200+ participants",
-                        link: "hackphs.tech",
+                        link: "hackprincetonhs.github.io/hackphs2022/",
                         image: "hackphs.png"
                     },
                     {
