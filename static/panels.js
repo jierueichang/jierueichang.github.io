@@ -152,7 +152,8 @@ let exp = new Vue(
                 name: 'The Tower Newspaper',
                 subtitle: 'Software Architect',
                 description: 'I build and maintain PHS\'s online student newspaper with over 15k monthly views, and developed an automatic article uploading system to expedite publication turnaround.',
-                image: 'tower_splash.png'
+                image: 'tower_splash.png',
+                link: 'towerphs.com'
             },
             {
                 name: 'HackPHS 2022',
@@ -178,7 +179,8 @@ let exp = new Vue(
                 name: 'Music After School',
                 subtitle: 'Mentor',
                 description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past two years I've mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
-                image: 'music.jpg'
+                image: 'music.jpg',
+                link: 'princetonk12.org/academics/the-arts/music-after-school'
             },
             /*
             {
