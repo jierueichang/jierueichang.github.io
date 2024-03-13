@@ -26,19 +26,36 @@ let proj = new Vue({
     data: {
         items: [
             {
-                year: "2023",
+                year: "2024",
                 projects: [
-                    {
-                        name: "Radian",
-                        description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
-                        image: "radian_2023.jpg",
-                        link: "soccer-robotics.github.io"
-                    },
                     {
                         name: "CPT Practice Platform",
                         description: "Platform for practicing competitive programming with 1000+ solution submissions and 15k+ monthly page views",
                         link: "phscpt.pythonanywhere.com",
                         image: "cptplatform.png"
+                    },
+                    {
+                        name: "su-don't-ku",
+                        description: "Lightweight realtime mobile-based computer vision Sudoku solver",
+                        link: "knosmos.github.io/sudontku",
+                        image: "sudontku.png"
+                    },
+                    {
+                        name: "Brownian Motion",
+                        description: "A collection of pseudorandom writings",
+                        link: "knosmos.github.io/brownian",
+                        image: "brownian.png"
+                    }
+                ]
+            },
+            {
+                year: "2023",
+                projects: [
+                    {
+                        name: "Radian 2023",
+                        description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
+                        image: "radian_2023.jpg",
+                        link: "soccer-robotics.github.io"
                     },
                     {
                         name: "USACO",
@@ -168,6 +185,12 @@ let proj = new Vue({
                         description: "CAPTCHA but it's Minesweeper",
                         link: "knosmos.github.io/mine-captcha",
                         image: "mine-captcha.png"
+                    },
+                    {
+                        name: "Geometry Street",
+                        description: "Solve geometry problems to control a \"self-driving\" car",
+                        link: "knosmos.github.io/geometry",
+                        image: "geometry.png"
                     },
                     {
                         name: "Emotilang",
