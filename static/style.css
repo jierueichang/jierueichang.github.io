@@ -194,16 +194,17 @@ a {
     color: var(--accent);
     text-decoration: none;
     text-shadow: 0px 0px 10px var(--secondary);
-    font-family: Poppins, sans-serif;
+    /*font-family: Poppins, sans-serif;*/
     cursor: pointer;
-    transition: all 0.15s;
-    font-weight: 500;
+    transition: all 0.1s;
+    /*font-weight: 500;*/
     font-size: 18pt;
+    display: inline-block;
 }
 a:hover {
     color: var(--heading);
-    text-shadow: 0px 0px 20px var(--text);
-    letter-spacing: 0.3px;
+    text-shadow: 0px 0px 20px var(--text);  
+    letter-spacing: 0.05px;
 }
 hr {
     border: 0;

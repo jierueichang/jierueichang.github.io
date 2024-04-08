@@ -167,6 +167,10 @@ function toggleViz() {
 }
 
 function draw() {
+    if (document.getElementById("canvas-container").getBoundingClientRect().bottom < 0){
+        frameRate(2);
+        return;
+    }
     if (viz == 1) {
         conway();
     }

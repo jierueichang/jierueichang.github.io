@@ -37,12 +37,6 @@ let proj = new Vue(
                 image: "cptplatform.png"
             },
             {
-                name: "USACO",
-                description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
-                link: "knosmos.github.io/usaco",
-                image: "usaco.png"
-            },
-            {
                 name: "Robowordle",
                 description: "Using computer vision and a 3D printer to robotically play a phone-based word game",
                 link: "github.com/knosmos/robowordle",
@@ -55,10 +49,29 @@ let proj = new Vue(
                 image: "setsolve.png"
             },
             {
+                name: "CMDPXL",
+                description: "Terminal-based image and pixel art editor, featured by GitHub",
+                link: "github.com/knosmos/cmdpxl",
+                image: "cmdpxl.png"
+            },
+            {
+                name: "su-don't-ku",
+                description: "Lightweight realtime mobile-based computer vision Sudoku solver",
+                link: "knosmos.github.io/sudontku",
+                image: "sudontku.png"
+            },
+            /*
+            {
                 name: "Daybreak",
                 description: "Play an AI hacking yourself out of a computer",
                 link: "knosmos.github.io/daybreak",
                 image: "daybreak.png"
+            },*/
+            {
+                name: "Brownian Motion",
+                description: "A collection of questionable pseudorandom creative writings",
+                link: "knosmos.github.io/brownian",
+                image: "brownian2.png"
             },
             {
                 name: "TL;DS",
@@ -73,17 +86,18 @@ let proj = new Vue(
                 image: "rhythmvision3.png"
             },
             {
+                name: "USACO",
+                description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
+                link: "knosmos.github.io/usaco",
+                image: "usaco.png"
+            },
+            {
                 name: "Scribblebot",
                 description: "Contour-detecting autodraw bot to better mimic human drawing",
                 link: "github.com/knosmos/scribblebot",
                 image: "scribblebot.png"
             },
-            {
-                name: "CMDPXL",
-                description: "Terminal-based image and pixel art editor, featured by GitHub",
-                link: "github.com/knosmos/cmdpxl",
-                image: "cmdpxl.png"
-            },
+            /*
             {
                 name: "Tres",
                 description: "The classic online multiplayer card game ripoff",
@@ -138,13 +152,13 @@ let exp = new Vue(
                 name: 'Princeton Autonomous Vehicle Engineering',
                 subtitle: 'GPS/RC + Computer Vision Specialist',
                 description: 'In Princeton University\'s PAVE team I build GPS/remote-control systems and design high-performance computer vision models for autonomous electric boat navigation.',
-                link: 'pave.princeton.edu/',
+                link: 'princetonelectricspeedboating.com',
                 image: 'pave_splash2.png'
             },
             {
                 name: 'PHS Math Team',
                 subtitle: 'Captain',
-                description: "In Math Team, I teach combinatorics, work on challenging problems in individual and team settings, and participate in national competitions including ARML, MMATHS, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
+                description: "In Math Team, I teach combinatorics, work on challenging problems in individual and team settings, and participate in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
                 link: 'sites.google.com/view/phsmathteam/home',
                 image: 'math_TEMP.jpg'
             },

@@ -42,9 +42,9 @@ let proj = new Vue({
                     },
                     {
                         name: "Brownian Motion",
-                        description: "A collection of pseudorandom writings",
+                        description: "A collection of questionable pseudorandom creative writings",
                         link: "knosmos.github.io/brownian",
-                        image: "brownian.png"
+                        image: "brownian2.png"
                     }
                 ]
             },
