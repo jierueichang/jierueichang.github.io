@@ -86,6 +86,12 @@ let proj = new Vue({
                         description: "Automated Nonogram logic puzzle solver with Selenium",
                         link: "github.com/knosmos/yesyesgram",
                         image: "yesyesgram.png"
+                    },
+                    {
+                        name: "Lexeme",
+                        description: "Minimalist online word clock",
+                        link: "knosmos.github.io/lexeme",
+                        image: "lexeme.png"
                     }
                 ]
             },
