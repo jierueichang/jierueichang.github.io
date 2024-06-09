@@ -45,6 +45,18 @@ let proj = new Vue({
                         description: "A collection of questionable pseudorandom creative writings",
                         link: "knosmos.github.io/brownian",
                         image: "brownian2.png"
+                    },
+                    {
+                        name: "Eigensheep",
+                        description: "Image-based Ovine Detection with Principal Component Analysis",
+                        link: "github.com/knosmos/eigensheep",
+                        image: "eigensheep.png"
+                    },
+                    {
+                        name: "MNIST Clustering",
+                        description: "Clustering handwritten digits with Kruskal's algorithm and K-means",
+                        link: "github.com/knosmos/mnist-clustering",
+                        image: "mnist.png"
                     }
                 ]
             },
