@@ -57,6 +57,12 @@ let proj = new Vue({
                         description: "Clustering handwritten digits with Kruskal's algorithm and K-means",
                         link: "github.com/knosmos/mnist-clustering",
                         image: "mnist.png"
+                    },
+                    {
+                        name: "NN from Scratch",
+                        description: "Neural network implementation from scratch with backpropagation to solve XOR problem",
+                        link: "gist.github.com/knosmos/50a92dbc7840d4c1e088a3323334d20a",
+                        image: "xor.png"
                     }
                 ]
             },
