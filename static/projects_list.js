@@ -63,6 +63,12 @@ let proj = new Vue({
                         description: "Neural network implementation from scratch with backpropagation to solve XOR problem",
                         link: "gist.github.com/knosmos/50a92dbc7840d4c1e088a3323334d20a",
                         image: "xor.png"
+                    },
+                    {
+                        name: "nn-fizzbuzz",
+                        description: "Attacking FizzBuzz with a browser-based neural network (and still getting it wrong sometimes)",
+                        link: "github.com/knosmos/nn-fizzBuzz",
+                        image: "fizzbuzz2.png"
                     }
                 ]
             },
