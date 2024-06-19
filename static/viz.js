@@ -1,7 +1,7 @@
 /* GENERAL */
 
-let w = window.clientWidth * 0.97;
-let h = window.clientHeight;
+let w = document.body.clientWidth * 0.9;
+let h = document.body.clientHeight;
 
 /* CONWAY */
 
@@ -180,8 +180,8 @@ function draw() {
 }
 
 function windowResized() {
-    w = window.innerWidth * 0.97;
-    h = window.innerHeight;
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
     resizeCanvas(w, h);
 
     gridCntW = w > 800 ? 120:80;
