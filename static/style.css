@@ -27,7 +27,6 @@ html, body {
     font-size: 14pt;
     scroll-behavior: smooth;
     line-height: 1.3;
-    overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
