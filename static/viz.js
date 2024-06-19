@@ -1,7 +1,7 @@
 /* GENERAL */
 
-let w = window.innerWidth * 0.97;
-let h = window.innerHeight;
+let w = window.clientWidth * 0.97;
+let h = window.clientHeight;
 
 /* CONWAY */
 

@@ -67,7 +67,7 @@ let proj = new Vue({
                     {
                         name: "nn-fizzbuzz",
                         description: "Attacking FizzBuzz with a browser-based neural network (and still getting it wrong sometimes)",
-                        link: "github.com/knosmos/nn-fizzBuzz",
+                        link: "knosmos.github.io/nn-fizzBuzz",
                         image: "fizzbuzz2.png"
                     }
                 ]
