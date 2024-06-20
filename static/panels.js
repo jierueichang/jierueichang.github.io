@@ -130,35 +130,35 @@ let exp = new Vue(
             {
                 name: 'Princeton Soccer Robotics',
                 subtitle: 'Captain',
-                description: "As captain of PSR and its Lightweight Division team Radian, I integrate intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
+                description: "As captain of PSR and its Lightweight Division team Radian, I integrated intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
                 link: 'soccer-robotics.github.io/',
                 image: 'radian_team_2.jpg'
             },
             {
                 name: 'Applied Computing and Multimedia Lab',
                 subtitle: 'Research Intern',
-                description: 'I\'m working on using semi-supervised techniques to help the diagnosis of respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
+                description: 'I worked on using semi-supervised techniques to help the diagnosis of respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
                 link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
                 image: 'research.png'
             },
             {
                 name: 'Princeton Competitive Programming Team',
                 subtitle: 'Co-Founder',
-                description: "At PHSCPT I teach competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
+                description: "At PHSCPT, I taught competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
                 link: 'phscpt.github.io',
                 image: 'cpt2.png'
             },
             {
                 name: 'Princeton Autonomous Vehicle Engineering',
                 subtitle: 'GPS/RC + Computer Vision Specialist',
-                description: 'In Princeton University\'s PAVE team I build GPS/remote-control systems and design high-performance computer vision models for autonomous electric boat navigation.',
+                description: 'On Princeton University\'s PAVE team, I built GPS/remote-control systems and designed high-performance computer vision models for autonomous electric boat navigation.',
                 link: 'princetonelectricspeedboating.com',
                 image: 'pave_splash2.png'
             },
             {
                 name: 'PHS Math Team',
                 subtitle: 'Captain',
-                description: "In Math Team, I teach combinatorics, work on challenging problems in individual and team settings, and participate in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
+                description: "In Math Team, I taught combinatorics, worked on challenging problems in individual and team settings, and participated in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
                 link: 'sites.google.com/view/phsmathteam/home',
                 image: 'math_TEMP.jpg'
             },
@@ -192,7 +192,7 @@ let exp = new Vue(
             {
                 name: 'Music After School',
                 subtitle: 'Mentor',
-                description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past three years I've mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
+                description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past three years I mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
                 image: 'music.jpg',
                 link: 'princetonk12.org/academics/the-arts/music-after-school'
             },
@@ -277,10 +277,18 @@ function updateMITText() {
 }
 
 updateMITText();
+let textHidden = false;
 
 document.addEventListener("scroll", function() {
-    if (document.getElementById("mit-text").getBoundingClientRect().bottom < 0 
-        || document.getElementById("mit-text").getBoundingClientRect().top > window.innerHeight) {
-        updateMITText();
+    if ((document.getElementById("mit-text").getBoundingClientRect().bottom < 0 
+        || document.getElementById("mit-text").getBoundingClientRect().top > window.innerHeight)
+    ) {
+        if (!textHidden) {
+            updateMITText();
+            textHidden = true;            
+        }
+    }
+    else {
+        textHidden = false;
     }
 });
