@@ -256,3 +256,31 @@ let footer = new Vue({
         currentYear: new Date().getUTCFullYear()
     }
 });
+
+let about = new Vue({
+    el: '#mit-text',
+    data:
+    {
+        mitText: ""
+    }
+})
+
+function rand(a) {
+    return a[Math.floor(Math.random() * a.length)];
+}
+
+function updateMITText() {
+    let locations = ["Maine", "Missouri", "Montana", "Madrid", "Malaysia", "Mexico", "Mongolia", "Madagascar", "Martian", "Marsupial", "Minneapolis"];
+    let buildings = ["Institute", "Igloo", "Icehouse", "Infirmary", "Incubator", "Incinerator", "Inquisition"];
+    let specialties = ["Trucking", "Telemarketing", "Trombones", "Topography", "Trainspotting", "Trigonometry", "Tailors", "Tetris", "Tofu", "Tetrapods", "Tetrahedra", "Teacups"];
+    about.mitText = `${rand(locations)} ${rand(buildings)} of ${rand(specialties)}`;
+}
+
+updateMITText();
+
+document.addEventListener("scroll", function() {
+    if (document.getElementById("mit-text").getBoundingClientRect().bottom < 0 
+        || document.getElementById("mit-text").getBoundingClientRect().top > window.innerHeight) {
+        updateMITText();
+    }
+});
