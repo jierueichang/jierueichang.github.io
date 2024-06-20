@@ -16,6 +16,11 @@ html {
     src: url("../assets/poppins.ttf");
 }
 
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url("../assets/spacegrotesk-regular.ttf");
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -216,7 +221,7 @@ hr {
     box-shadow: 0px 0px 10px var(--secondary);
 }
 h1 {
-    font-family: Poppins, sans-serif;
+    font-family: SpaceGrotesk, Poppins, sans-serif;
     font-weight: 500;
     text-shadow: 0px 0px 50px var(--accent);
     font-size: 70pt;

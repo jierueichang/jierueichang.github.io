@@ -160,7 +160,7 @@ let exp = new Vue(
                 subtitle: 'Captain',
                 description: "In Math Team, I taught combinatorics, worked on challenging problems in individual and team settings, and participated in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PuMAC 2022.",
                 link: 'sites.google.com/view/phsmathteam/home',
-                image: 'math_TEMP.jpg'
+                image: 'math.jpg'
             },
             {
                 name: 'The Tower Newspaper',
@@ -285,7 +285,7 @@ document.addEventListener("scroll", function() {
     ) {
         if (!textHidden) {
             updateMITText();
-            textHidden = true;            
+            textHidden = true;
         }
     }
     else {
