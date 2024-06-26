@@ -180,11 +180,12 @@ function draw() {
 }
 
 function windowResized() {
-    dh = document.body.clientHeight - h;
-    window.scrollBy(0, dh);
-
     w = document.body.clientWidth;
-    h = document.body.clientHeight;
+    
+    dh = document.body.clientHeight - h;
+    if (dh > 200) {
+        h = document.body.clientHeight;
+    }
     resizeCanvas(w, h);
 
     gridCntW = w > 800 ? 120:80;
