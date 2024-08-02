@@ -69,7 +69,19 @@ let proj = new Vue({
                         description: "Attacking FizzBuzz with a browser-based neural network (and still getting it wrong sometimes)",
                         link: "knosmos.github.io/nn-fizzBuzz",
                         image: "fizzbuzz2.png"
-                    }
+                    },
+                    {
+                        name: "airhorn",
+                        description: "Obnoxious fullscreen alert system with GCalendar integration",
+                        link: "github.com/knosmos/airhorn",
+                        image: "IMG_1124.png"
+                    },
+                     {
+                        name: "REXplorer",
+                        description: "Timeline viewer for MIT Residence Exploration 2024",
+                        link: "knosmos.github.io/rexplorer",
+                        image: "IMG_1125.png"
+                     }
                 ]
             },
             {
