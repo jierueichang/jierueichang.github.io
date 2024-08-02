@@ -80,7 +80,7 @@ let proj = new Vue({
                         name: "REXplorer",
                         description: "Timeline viewer for MIT Residence Exploration 2024",
                         link: "knosmos.github.io/rexplorer",
-                        image: "IMG_1125.png"
+                        image: "IMG_1125.jpeg"
                      }
                 ]
             },
