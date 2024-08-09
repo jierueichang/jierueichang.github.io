@@ -76,12 +76,12 @@ let proj = new Vue({
                         link: "github.com/knosmos/airhorn",
                         image: "IMG_1124.png"
                     },
-                     {
+                    {
                         name: "REXplorer",
-                        description: "Timeline viewer for MIT Residence Exploration 2024",
+                        description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
                         link: "knosmos.github.io/rexplorer",
-                        image: "IMG_1125.jpeg"
-                     }
+                        image: "rex.jpg"
+                    }
                 ]
             },
             {

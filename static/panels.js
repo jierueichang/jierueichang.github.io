@@ -27,8 +27,6 @@ let proj = new Vue(
                 description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
                 image: "radian_2023.jpg",
                 link: "soccer-robotics.github.io"
-                /*description: "2nd Place at Robocup Junior USA: autonomous soccer robot with IR ball tracking, PID angle correction, scoring algorithms, line avoidance, and computer vision-based goal detection",
-                image: "radian.png"*/
             },
             {
                 name: "CPT Practice Platform",
@@ -112,11 +110,19 @@ let proj = new Vue(
                 image: "sudoku2.png"
             },*/
             {
+                name: "REXplorer",
+                description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
+                link: "knosmos.github.io/rexplorer",
+                image: "rex.jpg"
+            },
+            /*
+            {
                 name: "Arbiter",
                 description: "Hackathon judging system with ranking algorithm based on minimum feedback arc set problem and topological sorting",
                 link: "github.com/knosmos/arbiter",
                 image: "arbiter.png"
             },
+            */
         ]
     }
 });
@@ -128,6 +134,13 @@ let exp = new Vue(
     {
         items: [
             {
+                name: 'Appier',
+                subtitle: 'Software Engineering Intern',
+                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, LLM retrieval-augmented generation pipelines, and lots of free snacks to build image-based systems for automated website characterization.",
+                link: 'www.appier.com/en/products/aixon',
+                image: 'appier2.jpg'
+            },
+            {
                 name: 'Princeton Soccer Robotics',
                 subtitle: 'Captain',
                 description: "As captain of PSR and its Lightweight Division team Radian, I integrated intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
@@ -137,7 +150,7 @@ let exp = new Vue(
             {
                 name: 'Applied Computing and Multimedia Lab',
                 subtitle: 'Research Intern',
-                description: 'I worked on using semi-supervised techniques to help the diagnosis of respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
+                description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
                 link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
                 image: 'research.png'
             },
@@ -189,13 +202,13 @@ let exp = new Vue(
                 description: "Demoed electronics projects at Maker Faire New York in <a href='https://makerfaire.com/maker/entry/63428/' style='display:inline-block;font-size:14pt'>2017</a> and <a href='https://makerfaire.com/maker/entry/67542/' style='display:inline-block;font-size:14pt'>2018</a>",
                 link: 'makerfaire.com'
             },*/
-            {
+            /*{
                 name: 'Music After School',
                 subtitle: 'Mentor',
                 description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past three years I mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
                 image: 'music.jpg',
                 link: 'princetonk12.org/academics/the-arts/music-after-school'
-            },
+            },*/
             /*
             {
                 name: 'Kickside Martial Arts',
@@ -280,7 +293,7 @@ updateMITText();
 let textHidden = false;
 
 document.addEventListener("scroll", function() {
-    if ((document.getElementById("mit-text").getBoundingClientRect().bottom < 0 
+    if ((document.getElementById("about").getBoundingClientRect().bottom < 0 
         || document.getElementById("mit-text").getBoundingClientRect().top > window.innerHeight)
     ) {
         if (!textHidden) {

@@ -4,6 +4,7 @@ html {
     --text: #b8b8b8;
     --accent: #3699C7;
     --secondary: #16719b;
+    --pop: #b1138f;
 }
 
 @font-face {
@@ -64,11 +65,11 @@ html, body {
 #heading-image {
     width: 100%;
     filter: drop-shadow(0px 0px 10px var(--secondary));
+    transition: filter 0.2s;
 }
 
 #heading-image:hover {
-    filter: drop-shadow(0px 0px 20px var(--accent));
-    transition: filter 0.2s;
+    filter: drop-shadow(10px 10px 20px var(--accent));
 }
 
 .links {
@@ -222,15 +223,12 @@ hr {
 }
 h1 {
     font-family: SpaceGrotesk, Poppins, sans-serif;
-    font-weight: 500;
-    text-shadow: 0px 0px 50px var(--accent);
+    font-weight: 400;
+    text-shadow: -20px -10px 30px var(--accent), 20px 10px 50px var(--pop);
     font-size: 70pt;
-    transition: all 0.15s;
+    transition: all 2s;
     color: var(--heading);
     margin-top: 200px;
-}
-h1:hover {
-    text-shadow: 0px 0px 40px var(--text);
 }
 @media screen and (max-width: 800px) {
     h1 {
@@ -241,8 +239,9 @@ h1:hover {
     }
 }
 h2 {
-    font-family: Poppins, sans-serif;
+    font-family: SpaceGrotesk, Poppins, sans-serif;
     font-size: 40pt;
+    font-weight: 400;
     color: var(--accent);
 }
 
