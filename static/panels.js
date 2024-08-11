@@ -136,7 +136,7 @@ let exp = new Vue(
             {
                 name: 'Appier',
                 subtitle: 'Software Engineering Intern',
-                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, LLM retrieval-augmented generation pipelines, and lots of free snacks to build image-based systems for automated website characterization.",
+                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, CNNs, LLM retrieval-augmented generation pipelines, and lots of free snacks to build systems for image-based website characterization, giving me a taste of work in a fast-paced industry environment.",
                 link: 'www.appier.com/en/products/aixon',
                 image: 'appier2.jpg'
             },

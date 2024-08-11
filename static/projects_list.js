@@ -77,6 +77,12 @@ let proj = new Vue({
                         image: "IMG_1124.png"
                     },
                     {
+                        name: "artbitrary",
+                        description: "canvases of algorithmic dreams",
+                        link: "knosmos.github.io/artbitrary",
+                        image: "convex-spindle.png"
+                    },
+                    {
                         name: "REXplorer",
                         description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
                         link: "knosmos.github.io/rexplorer",
@@ -252,6 +258,12 @@ let proj = new Vue({
                         link: "github.com/knosmos/reaction-map",
                         image: "reaction.jpg"
                     },
+                    {
+                        name: "JCDOS",
+                        description: "Portfolio as a simulated desktop interface in a web browser",
+                        link: "knosmos.github.io/jcdos",
+                        image: "jcdos3.png"
+                    }
                 ]
             },
             {
