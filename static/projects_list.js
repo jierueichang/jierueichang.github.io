@@ -306,6 +306,12 @@ let proj = new Vue({
                         image: "petridish.jpg"
                     },
                     {
+                        name: "Bottlecaps",
+                        description: "Online two-player checkers game",
+                        link: "knosmos.github.io/checkers",
+                        image: "checkers.png"
+                    },
+                    {
                         name: "Clearing the Skies",
                         link: "locus-lab.github.io/insertnamehere",
                         image: "clearingskies2.png",
