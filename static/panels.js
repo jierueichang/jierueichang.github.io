@@ -53,6 +53,12 @@ let proj = new Vue(
                 image: "cmdpxl.png"
             },
             {
+                name: "a.phrase.ia",
+                description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
+                link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
+                image: "hackmit.jpg"
+            },
+            {
                 name: "su-don't-ku",
                 description: "Lightweight realtime mobile-based computer vision Sudoku solver",
                 link: "knosmos.github.io/sudontku",
@@ -89,12 +95,12 @@ let proj = new Vue(
                 link: "knosmos.github.io/usaco",
                 image: "usaco.png"
             },
-            {
+            /*{
                 name: "Scribblebot",
                 description: "Contour-detecting autodraw bot to better mimic human drawing",
                 link: "github.com/knosmos/scribblebot",
                 image: "scribblebot.png"
-            },
+            },*/
             /*
             {
                 name: "Tres",

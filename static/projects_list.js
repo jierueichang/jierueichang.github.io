@@ -35,10 +35,10 @@ let proj = new Vue({
                         image: "cptplatform.png"
                     },
                     {
-                        name: "su-don't-ku",
-                        description: "Lightweight realtime mobile-based computer vision Sudoku solver",
-                        link: "knosmos.github.io/sudontku",
-                        image: "sudontku.png"
+                        name: "a.phrase.ia",
+                        description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
+                        link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
+                        image: "hackmit.jpg"
                     },
                     {
                         name: "Brownian Motion",
@@ -46,6 +46,12 @@ let proj = new Vue({
                         link: "knosmos.github.io/brownian",
                         image: "brownian2.png"
                     },
+                    {
+                        name: "su-don't-ku",
+                        description: "Lightweight realtime mobile-based computer vision Sudoku solver",
+                        link: "knosmos.github.io/sudontku",
+                        image: "sudontku.png"
+                    },                    
                     {
                         name: "Eigensheep",
                         description: "Image-based Ovine Detection with Principal Component Analysis",
