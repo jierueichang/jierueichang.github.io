@@ -26,6 +26,23 @@ let proj = new Vue({
     data: {
         items: [
             {
+                year: "2025",
+                projects: [
+                    {
+                        name: "Stack Overflow",
+                        description: "Self-driving block-stacking robot: winner of MIT Mobile Autonomous Systems Laboratory 2025",
+                        link: "maslab.mit.edu/2025/wiki/team08",
+                        image: "maslab.png"
+                    },
+                    {
+                        name: "Please Drink Responsibly",
+                        description: "Five underage freshmen build a CoreXY ball-tracking robotic beer pong table",
+                        link: "github.com/knosmos/drinkresponsibly",
+                        image: "drinkresponsibly.png"
+                    }
+                ]
+            },
+            {
                 year: "2024",
                 projects: [
                     {
@@ -73,7 +90,7 @@ let proj = new Vue({
                     {
                         name: "nn-fizzbuzz",
                         description: "Attacking FizzBuzz with a browser-based neural network (and still getting it wrong sometimes)",
-                        link: "knosmos.github.io/nn-fizzBuzz",
+                        link: "knosmos.github.io/nn-fizzbuzz",
                         image: "fizzbuzz2.png"
                     },
                     {
