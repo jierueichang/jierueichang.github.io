@@ -140,9 +140,27 @@ let exp = new Vue(
     {
         items: [
             {
+                name: 'Freitas Research Group',
+                subtitle: 'Undergraduate Researcher',
+                description: "With Prof. Rodrigo Freitas and Daniel Xiao, I'm building ML-driven tools for characterizing crystalline systems. Our goal is to identify dislocation networks in large-scale molecular simulations of complex metal alloys, allowing for fast prediction of chemical and mechanical properties.",
+                link: 'freitas.mit.edu',
+                image: 'freitas-2.png'
+            },
+            {
+                name: 'MIT Arcturus',
+                subtitle: 'Software Engineer',
+                description: "On the software team, I led the development of a LiDAR-based autonomous boat docking system using point cloud registration. I ran ROS and Gazebo simulations to test the system, and integrated it with the rest of the robot's autonomy stack.",
+                link: 'arcturus.mit.edu',
+                image: 'arcturus-temp.jpg'
+            },
+            /*{
+                name: 'Design Build Fly',
+                subtitle: 'Aerodynamics Team',
+            },*/
+            {
                 name: 'Appier',
                 subtitle: 'Software Engineering Intern',
-                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, CNNs, LLM retrieval-augmented generation pipelines, and lots of free snacks to build systems for image-based website characterization, giving me a taste of work in a fast-paced industry environment.",
+                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, and retrieval-augmented generation pipelines to build website characterization systems. I gained lots of free snacks and a taste of work in a fast-paced industry environment.",
                 link: 'www.appier.com/en/products/aixon',
                 image: 'appier2.jpg'
             },
@@ -188,20 +206,20 @@ let exp = new Vue(
                 image: 'tower_splash.png',
                 link: 'towerphs.com'
             },
-            {
+            /*{
                 name: 'HackPHS 2022',
                 subtitle: 'Tech Officer',
                 description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
                 link: 'hackprincetonhs.github.io/hackphs2022/',
                 image: 'hackphs.jpg'
-            },
-            {
+            },*/
+            /*{
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Mentor',
                 description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
                 link: 'algorithmicthinking.org/',
                 image: 'pact.png'
-            },
+            },*/
             /*
             {
                 name: 'Maker Faire',

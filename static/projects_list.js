@@ -39,7 +39,13 @@ let proj = new Vue({
                         description: "Five underage freshmen build a CoreXY ball-tracking robotic beer pong table",
                         link: "github.com/knosmos/drinkresponsibly",
                         image: "drinkresponsibly.png"
-                    }
+                    },
+                    {
+                        name: "Hummingbird",
+                        description: "A custom STM32-based flight controller for autonomous gliders",
+                        link: "github.com/knosmos/hummingbird",
+                        image: "hummingbird.png"
+                    },
                 ]
             },
             {
@@ -110,6 +116,12 @@ let proj = new Vue({
                         description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
                         link: "knosmos.github.io/rexplorer",
                         image: "rex.jpg"
+                    },
+                    {
+                        name: "Signal Lamp",
+                        description: "Capacitive-touch telegraph lamp that relays Morse code over the internet",
+                        link: "github.com/knosmos/signal-lamp",
+                        image: "signallamp.png"
                     }
                 ]
             },
