@@ -53,7 +53,7 @@ let proj = new Vue(
                 image: "cmdpxl.png"
             },
             {
-                name: "a.phrase.ia",
+                name: "a-phrase-ia",
                 description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
                 link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
                 image: "hackmit.jpg"
@@ -71,11 +71,17 @@ let proj = new Vue(
                 link: "knosmos.github.io/daybreak",
                 image: "daybreak.png"
             },*/
-            {
+            /*{
                 name: "Brownian Motion",
                 description: "A collection of questionable pseudorandom creative writings",
                 link: "knosmos.github.io/brownian",
                 image: "brownian2.png"
+            },*/
+            {
+                name: "Stack Overflow",
+                description: "Self-driving block-stacking robot: winner of MIT Mobile Autonomous Systems Laboratory 2025",
+                link: "maslab.mit.edu/2025/wiki/team08",
+                image: "maslab.png"
             },
             {
                 name: "TL;DS",
@@ -90,11 +96,17 @@ let proj = new Vue(
                 image: "rhythmvision3.png"
             },
             {
+                name: "Hummingbird",
+                description: "A custom STM32-based flight controller for autonomous gliders",
+                link: "https://web.mit.edu/dbf/www/",
+                image: "hummingbird-pcb.jpg"
+            },
+            /*{
                 name: "USACO",
                 description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
                 link: "knosmos.github.io/usaco",
                 image: "usaco.png"
-            },
+            },*/
             /*{
                 name: "Scribblebot",
                 description: "Contour-detecting autodraw bot to better mimic human drawing",

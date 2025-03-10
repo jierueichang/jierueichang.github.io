@@ -43,8 +43,20 @@ let proj = new Vue({
                     {
                         name: "Hummingbird",
                         description: "A custom STM32-based flight controller for autonomous gliders",
-                        link: "github.com/knosmos/hummingbird",
-                        image: "hummingbird.png"
+                        link: "web.mit.edu/dbf/www/",
+                        image: "hummingbird-pcb.jpg"
+                    },
+                    {
+                        name: "Signal Lamp",
+                        description: "Capacitive-touch telegraph lamp that relays Morse code over the internet",
+                        link: "github.com/knosmos/signal-lamp",
+                        image: "signallamp.png"
+                    },
+                    {
+                        name: "Brownian Motion",
+                        description: "A collection of questionable pseudorandom creative writings",
+                        link: "knosmos.github.io/brownian",
+                        image: "brownian2.png"
                     },
                 ]
             },
@@ -58,16 +70,10 @@ let proj = new Vue({
                         image: "cptplatform.png"
                     },
                     {
-                        name: "a.phrase.ia",
+                        name: "a-phrase-ia",
                         description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
                         link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
                         image: "hackmit.jpg"
-                    },
-                    {
-                        name: "Brownian Motion",
-                        description: "A collection of questionable pseudorandom creative writings",
-                        link: "knosmos.github.io/brownian",
-                        image: "brownian2.png"
                     },
                     {
                         name: "su-don't-ku",
@@ -106,6 +112,11 @@ let proj = new Vue({
                         image: "IMG_1124.png"
                     },
                     {
+                        name: "Googly",
+                        description: "Mechanized googly eyes with metal lasercut frame",
+                        image: "googly.jpg"
+                    },
+                    {
                         name: "artbitrary",
                         description: "canvases of algorithmic dreams",
                         link: "knosmos.github.io/artbitrary",
@@ -117,12 +128,6 @@ let proj = new Vue({
                         link: "knosmos.github.io/rexplorer",
                         image: "rex.jpg"
                     },
-                    {
-                        name: "Signal Lamp",
-                        description: "Capacitive-touch telegraph lamp that relays Morse code over the internet",
-                        link: "github.com/knosmos/signal-lamp",
-                        image: "signallamp.png"
-                    }
                 ]
             },
             {
