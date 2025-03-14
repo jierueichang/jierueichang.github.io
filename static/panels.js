@@ -165,10 +165,13 @@ let exp = new Vue(
                 link: 'arcturus.mit.edu',
                 image: 'arcturus-temp.jpg'
             },
-            /*{
+            {
                 name: 'Design Build Fly',
                 subtitle: 'Aerodynamics Team',
-            },*/
+                description: "On MIT's aircraft build team, I worked on avionics systems, got carbon fiber dust everywhere, and designed a custom STM32-based flight controller for autonomous navigation.",
+                link: 'web.mit.edu/dbf/www/',
+                image: 'dbf_proto2.jpg'
+            },
             {
                 name: 'Appier',
                 subtitle: 'Software Engineering Intern',
@@ -218,20 +221,20 @@ let exp = new Vue(
                 image: 'tower_splash.png',
                 link: 'towerphs.com'
             },
-            /*{
+            {
                 name: 'HackPHS 2022',
                 subtitle: 'Tech Officer',
                 description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
                 link: 'hackprincetonhs.github.io/hackphs2022/',
                 image: 'hackphs.jpg'
-            },*/
-            /*{
+            },
+            {
                 name: 'Program in Algebraic and Combinatorial Thinking',
                 subtitle: 'Mentor',
                 description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
                 link: 'algorithmicthinking.org/',
                 image: 'pact.png'
-            },*/
+            },
             /*
             {
                 name: 'Maker Faire',

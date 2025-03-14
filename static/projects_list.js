@@ -53,6 +53,11 @@ let proj = new Vue({
                         image: "signallamp.png"
                     },
                     {
+                        name: "Spinny Hologram of Death",
+                        description: "Volumetric display with custom ESP32-based spinning LED matrix (in progress)",
+                        image: "hologram.png"
+                    },
+                    {
                         name: "Brownian Motion",
                         description: "A collection of questionable pseudorandom creative writings",
                         link: "knosmos.github.io/brownian",
