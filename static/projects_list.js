@@ -54,9 +54,20 @@ let proj = new Vue({
                     },
                     {
                         name: "Spinny Hologram of Death",
-                        description: "Volumetric display with custom ESP32-based spinning LED matrix (in progress)",
+                        description: "Volumetric display with custom ESP32-based spinning LED matrix",
                         image: "hologram.png"
                     },
+                    {
+                        name: "Ytterbium",
+                        description: "Custom periodic table-inspired NFC puzzle boards",
+                        image: "ytterbium.jpg"
+                    },
+                    /*{
+                        name: "Undyner",
+                        description: "CV bot for solving Undertale's Undyne the Undying fight",
+                        link: "knosmos.github.io/undyner",
+                        image: "undyner.png"
+                    },*/
                     {
                         name: "Brownian Motion",
                         description: "A collection of questionable pseudorandom creative writings",
@@ -77,7 +88,8 @@ let proj = new Vue({
                     {
                         name: "a-phrase-ia",
                         description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
-                        link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
+                        // link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
+                        link: "github.com/knosmos/a.phrase.ia",
                         image: "hackmit.jpg"
                     },
                     {

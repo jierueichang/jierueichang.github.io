@@ -161,14 +161,14 @@ let exp = new Vue(
             {
                 name: 'MIT Arcturus',
                 subtitle: 'Software Engineer',
-                description: "On the software team, I led the development of a LiDAR-based autonomous boat docking system using point cloud registration. I ran ROS and Gazebo simulations to test the system, and integrated it with the rest of the robot's autonomy stack.",
+                description: "On the autonomy team, I led the development of a LiDAR-based autonomous boat docking system using point cloud registration, with ROS integration and Gazebo simulations.",
                 link: 'arcturus.mit.edu',
-                image: 'arcturus-temp.jpg'
+                image: 'arcturus.jpg'
             },
             {
                 name: 'Design Build Fly',
                 subtitle: 'Aerodynamics Team',
-                description: "On MIT's aircraft build team, I worked on avionics systems, got carbon fiber dust everywhere, and designed a custom STM32-based flight controller for autonomous navigation.",
+                description: "On MIT's aircraft build team, I worked on avionics systems, designed a custom STM32-based flight controller for autonomous navigation, and got carbon fiber dust all over the shop floor.",
                 link: 'web.mit.edu/dbf/www/',
                 image: 'dbf_proto2.jpg'
             },
