@@ -69,6 +69,12 @@ let proj = new Vue({
                         image: "undyner.png"
                     },*/
                     {
+                        name: "Tachigurasu",
+                        description: "An AI tamagotchi to fix your posture, built with ESP32",
+                        link: "github.com/knosmos/tachigurasu",
+                        image: "tachi-cover.png"
+                    },
+                    {
                         name: "Brownian Motion",
                         description: "A collection of questionable pseudorandom creative writings",
                         link: "knosmos.github.io/brownian",
