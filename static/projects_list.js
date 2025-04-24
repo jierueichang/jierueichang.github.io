@@ -75,6 +75,12 @@ let proj = new Vue({
                         image: "tachi-cover.png"
                     },
                     {
+                        name: "Flow Freer",
+                        description: "The first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
+                        link: "knosmos.github.io/flowfreer",
+                        image: "flowfree.png"
+                    },
+                    {
                         name: "Brownian Motion",
                         description: "A collection of questionable pseudorandom creative writings",
                         link: "knosmos.github.io/brownian",
