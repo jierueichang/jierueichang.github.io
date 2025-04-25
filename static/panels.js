@@ -98,7 +98,7 @@ let proj = new Vue(
             {
                 name: "Hummingbird",
                 description: "A custom STM32-based flight controller for autonomous gliders",
-                link: "https://web.mit.edu/dbf/www/",
+                link: "github.com/knosmos/hummingbird",
                 image: "hummingbird-pcb.jpg"
             },
             /*{
