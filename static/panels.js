@@ -156,7 +156,7 @@ let exp = new Vue(
                 subtitle: 'Undergraduate Researcher',
                 description: "With Prof. Rodrigo Freitas and Daniel Xiao, I'm building ML-driven tools for characterizing crystalline systems. Our goal is to identify dislocation networks in large-scale molecular simulations of complex metal alloys, allowing for fast prediction of chemical and mechanical properties.",
                 link: 'freitas.mit.edu',
-                image: 'freitas-2.png'
+                image: 'freitas-3.png'
             },
             {
                 name: 'MIT Arcturus',
