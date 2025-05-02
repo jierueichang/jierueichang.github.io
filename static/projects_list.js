@@ -76,9 +76,15 @@ let proj = new Vue({
                     },
                     {
                         name: "Flow Freer",
-                        description: "The first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
+                        description: "World's first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
                         link: "knosmos.github.io/flowfreer",
                         image: "flowfree.png"
+                    },
+                    {
+                        name: "DC3Modifier",
+                        description: "One-click machine learning crystal classification for atomistic simulations",
+                        link: "github.com/DC3-Freitas/DC3-package",
+                        image: "dc3-ovito.png"
                     },
                     {
                         name: "Brownian Motion",

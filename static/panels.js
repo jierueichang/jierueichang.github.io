@@ -83,12 +83,12 @@ let proj = new Vue(
                 link: "maslab.mit.edu/2025/wiki/team08",
                 image: "maslab.png"
             },
-            {
+            /* {
                 name: "TL;DS",
                 description: "Winner of HackPHS 2021: Math solver with OCR and handwriting capability",
                 link: "github.com/knosmos/tlds",
                 image: "tlds.jpg"
-            },
+            }, */
             {
                 name: "Rhythmvision",
                 description: "Rhythm game with browser ML-driven pose estimation",
@@ -100,6 +100,18 @@ let proj = new Vue(
                 description: "A custom STM32-based flight controller for autonomous gliders",
                 link: "github.com/knosmos/hummingbird",
                 image: "hummingbird-pcb.jpg"
+            },
+            {
+                name: "Flow Freer",
+                description: "World's first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
+                link: "knosmos.github.io/flowfreer",
+                image: "flowfree.png"
+            },
+            {
+                name: "DC3Modifier",
+                description: "One-click machine learning crystal classification for atomistic simulations",
+                link: "github.com/DC3-Freitas/DC3-package",
+                image: "dc3-ovito.png"
             },
             /*{
                 name: "USACO",
@@ -127,12 +139,12 @@ let proj = new Vue(
                 link: "github.com/knosmos/sudoku-gen",
                 image: "sudoku2.png"
             },*/
-            {
+            /* {
                 name: "REXplorer",
                 description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
                 link: "knosmos.github.io/rexplorer",
                 image: "rex.jpg"
-            },
+            }, */
             /*
             {
                 name: "Arbiter",
@@ -167,7 +179,7 @@ let exp = new Vue(
             },
             {
                 name: 'Design Build Fly',
-                subtitle: 'Aerodynamics Team',
+                subtitle: 'Avionics Lead',
                 description: "On MIT's aircraft build team, I worked on avionics systems, designed a custom STM32-based flight controller for autonomous navigation, and got carbon fiber dust all over the shop floor.",
                 link: 'web.mit.edu/dbf/www/',
                 image: 'dbf_proto2.jpg'
