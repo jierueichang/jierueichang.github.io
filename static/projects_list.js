@@ -35,6 +35,12 @@ let proj = new Vue({
                         image: "maslab.png"
                     },
                     {
+                        name: "DC3Modifier",
+                        description: "One-click machine learning crystal classification for atomistic simulations",
+                        link: "github.com/DC3-Freitas/DC3-package",
+                        image: "dc3-ovito.png"
+                    },
+                    {
                         name: "Please Drink Responsibly",
                         description: "Five underage freshmen build a CoreXY ball-tracking robotic beer pong table",
                         link: "github.com/knosmos/drinkresponsibly",
@@ -62,6 +68,12 @@ let proj = new Vue({
                         description: "Custom periodic table-inspired NFC puzzle boards",
                         image: "ytterbium.jpg"
                     },
+                    {
+                        name: "Typst's Game of Life",
+                        description: "Typst implementation of Conway's Game of Life: a failed attempt to convince my friends of its power",
+                        link: "typst.app/project/rREcdY9hY9pqjirFUrhpZz",
+                        image: "typst-conway.png"
+                    },
                     /*{
                         name: "Undyner",
                         description: "CV bot for solving Undertale's Undyne the Undying fight",
@@ -71,7 +83,7 @@ let proj = new Vue({
                     {
                         name: "Tachigurasu",
                         description: "An AI tamagotchi to fix your posture, built with ESP32",
-                        link: "github.com/knosmos/tachigurasu",
+                        link: "devpost.com/software/tachigurasu",
                         image: "tachi-cover.png"
                     },
                     {
@@ -79,12 +91,6 @@ let proj = new Vue({
                         description: "World's first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
                         link: "knosmos.github.io/flowfreer",
                         image: "flowfree.png"
-                    },
-                    {
-                        name: "DC3Modifier",
-                        description: "One-click machine learning crystal classification for atomistic simulations",
-                        link: "github.com/DC3-Freitas/DC3-package",
-                        image: "dc3-ovito.png"
                     },
                     {
                         name: "Brownian Motion",
