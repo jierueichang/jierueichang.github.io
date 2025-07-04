@@ -22,6 +22,11 @@ html {
     src: url("../assets/SpaceGrotesk-Regular.ttf");
 }
 
+@font-face {
+    font-family: Renogare;
+    src: url("../assets/Renogare-Regular.otf");
+}
+
 html, body {
     height: 100%;
     width: 100%;
