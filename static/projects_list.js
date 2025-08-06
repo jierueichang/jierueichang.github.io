@@ -98,6 +98,18 @@ let proj = new Vue({
                         link: "knosmos.github.io/brownian",
                         image: "brownian2.png"
                     },
+                    {
+                        name: "ManglarIA Sensor Map",
+                        description: "Interactive map of ManglarIA's mangrove monitoring sensor network, built with Next.js and Mapbox",
+                        link: "manglaria-sensors.vercel.app",
+                        image: "manglaria-sensors.jpg"
+                    },
+                    {
+                        name: "Cattlelogue",
+                        description: "Machine learning for projection of climate-driven shifts in livestock distribution",
+                        link: "github.com/knosmos/cattlelogue",
+                        image: "cattlelogue.png"
+                    }
                 ]
             },
             {
