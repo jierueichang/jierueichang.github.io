@@ -171,6 +171,13 @@ let exp = new Vue(
                 image: 'freitas-3.png'
             },
             {
+                name: 'World Wildlife Fund',
+                subtitle: 'AI/ML Intern',
+                description: "I didn't get to do any fieldwork at WWF, but I did build the first-ever ML model for projecting climate impacts on global livestock production alongside developing GCP cloud infrastructure with Terraform to pipeline underwater sensor data for a Google-backed mangrove monitoring project.",
+                link: 'https://wwf.panda.org/',
+                image: 'wwf2.jpg'
+            },
+            {
                 name: 'MIT Arcturus',
                 subtitle: 'Software Engineer',
                 description: "On the autonomy team, I led the development of a LiDAR-based autonomous boat docking system using point cloud registration, with ROS integration and Gazebo simulations.",
