@@ -29,6 +29,12 @@ let proj = new Vue({
                 year: "2025",
                 projects: [
                     {
+                        name: "Wirehead",
+                        description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM datasheet analyses and CP-SAT layout engine",
+                        link: "github.com/knosmos/wirehead",
+                        image: "wirehead.png"
+                    },
+                    {
                         name: "Stack Overflow",
                         description: "Self-driving block-stacking robot: winner of MIT Mobile Autonomous Systems Laboratory 2025",
                         link: "maslab.mit.edu/2025/wiki/team08",

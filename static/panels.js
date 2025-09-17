@@ -29,6 +29,12 @@ let proj = new Vue(
                 link: "soccer-robotics.github.io"
             },
             {
+                name: "Wirehead",
+                description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM datasheet analyses and CP-SAT layout engine",
+                link: "github.com/knosmos/wirehead",
+                image: "wirehead.png"
+            },
+            {
                 name: "CPT Practice Platform",
                 description: "Platform for practicing competitive programming with custom-written problems, 1000+ solution submissions, and 15k+ monthly page views",
                 link: "phscpt.pythonanywhere.com",
@@ -40,12 +46,12 @@ let proj = new Vue(
                 link: "github.com/knosmos/robowordle",
                 image: "wordle_thumb.png"
             },
-            {
-                name: "Ready Set Solve",
-                description: "Playing the card game SET with computer vision, using homography perspective correction, contour moments, and Sobel edge detection",
-                link: "github.com/knosmos/set-solve",
-                image: "setsolve.png"
-            },
+            // {
+            //     name: "Ready Set Solve",
+            //     description: "Playing the card game SET with computer vision, using homography perspective correction, contour moments, and Sobel edge detection",
+            //     link: "github.com/knosmos/set-solve",
+            //     image: "setsolve.png"
+            // },
             {
                 name: "CMDPXL",
                 description: "Terminal-based image and pixel art editor, featured by GitHub",
@@ -173,9 +179,16 @@ let exp = new Vue(
             {
                 name: 'World Wildlife Fund',
                 subtitle: 'AI/ML Intern',
-                description: "I didn't get to do any fieldwork at WWF, but I did build the first-ever ML model for projecting climate impacts on global livestock production alongside developing GCP cloud infrastructure with Terraform to pipeline underwater sensor data for a Google-backed mangrove monitoring project.",
-                link: 'https://wwf.panda.org/',
+                description: "At WWF, I built the first-ever ML model for projecting climate impacts on global livestock production, and developed GCP cloud infrastructure with Terraform to pipeline underwater sensor data for a Google-backed mangrove monitoring project.",
+                link: 'wwf.panda.org/',
                 image: 'wwf2.jpg'
+            },
+            {
+                name: 'MIT Rocket Team',
+                subtitle: 'Avionics Lead, LP&C',
+                description: "I'm leading the avionics side of a pathfinder for a propulsively-landing rocket, with a liquid-fueled engine and thrust vector control. We're developing custom flight computers and avionics systems to enable the necessary high-precision navigation and control.",
+                link: 'rocketry.mit.edu',
+                image: 'rocket-team-TEMP.webp'
             },
             {
                 name: 'MIT Arcturus',
@@ -212,13 +225,13 @@ let exp = new Vue(
                 link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
                 image: 'research.png'
             },
-            {
-                name: 'Princeton Competitive Programming Team',
-                subtitle: 'Co-Founder',
-                description: "At PHSCPT, I taught competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
-                link: 'phscpt.github.io',
-                image: 'cpt2.png'
-            },
+            // {
+            //     name: 'Princeton Competitive Programming Team',
+            //     subtitle: 'Co-Founder',
+            //     description: "At PHSCPT, I taught competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
+            //     link: 'phscpt.github.io',
+            //     image: 'cpt2.png'
+            // },
             {
                 name: 'Princeton Autonomous Vehicle Engineering',
                 subtitle: 'GPS/RC + Computer Vision Specialist',
@@ -226,34 +239,34 @@ let exp = new Vue(
                 link: 'princetonelectricspeedboating.com',
                 image: 'pave_splash2.png'
             },
-            {
-                name: 'PHS Math Team',
-                subtitle: 'Captain',
-                description: "In Math Team, I taught combinatorics, worked on challenging problems in individual and team settings, and participated in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PUMaC 2022.",
-                link: 'sites.google.com/view/phsmathteam/home',
-                image: 'math.jpg'
-            },
-            {
-                name: 'The Tower Newspaper',
-                subtitle: 'Software Architect',
-                description: 'I built and maintained PHS\'s online student newspaper with over 15k monthly views, and developed an automatic article uploading system to expedite publication turnaround.',
-                image: 'tower_splash.png',
-                link: 'towerphs.com'
-            },
-            {
-                name: 'HackPHS 2022',
-                subtitle: 'Tech Officer',
-                description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
-                link: 'hackprincetonhs.github.io/hackphs2022/',
-                image: 'hackphs.jpg'
-            },
-            {
-                name: 'Program in Algebraic and Combinatorial Thinking',
-                subtitle: 'Mentor',
-                description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
-                link: 'algorithmicthinking.org/',
-                image: 'pact.png'
-            },
+            // {
+            //     name: 'PHS Math Team',
+            //     subtitle: 'Captain',
+            //     description: "In Math Team, I taught combinatorics, worked on challenging problems in individual and team settings, and participated in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PUMaC 2022.",
+            //     link: 'sites.google.com/view/phsmathteam/home',
+            //     image: 'math.jpg'
+            // },
+            // {
+            //     name: 'The Tower Newspaper',
+            //     subtitle: 'Software Architect',
+            //     description: 'I built and maintained PHS\'s online student newspaper with over 15k monthly views, and developed an automatic article uploading system to expedite publication turnaround.',
+            //     image: 'tower_splash.png',
+            //     link: 'towerphs.com'
+            // },
+            // {
+            //     name: 'HackPHS 2022',
+            //     subtitle: 'Tech Officer',
+            //     description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
+            //     link: 'hackprincetonhs.github.io/hackphs2022/',
+            //     image: 'hackphs.jpg'
+            // },
+            // {
+            //     name: 'Program in Algebraic and Combinatorial Thinking',
+            //     subtitle: 'Mentor',
+            //     description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
+            //     link: 'algorithmicthinking.org/',
+            //     image: 'pact.png'
+            // },
             /*
             {
                 name: 'Maker Faire',
