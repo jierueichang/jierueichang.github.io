@@ -30,9 +30,15 @@ let proj = new Vue({
                 projects: [
                     {
                         name: "Wirehead",
-                        description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM datasheet analyses and CP-SAT layout engine",
-                        link: "github.com/knosmos/wirehead",
+                        description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM RAG datasheet analyses and AI-informed constrained mixed-integer linear programming layout engine",
+                        link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc",
                         image: "wirehead.png"
+                    },
+                    {
+                        name: "MapIT",
+                        description: "Room-scale searchable indoor map of the entire MIT campus used by 1000+ members of the MIT community. Leverages computer vision to analyze 900 floorplans and 40000+ rooms; deployed with Jenkins and Docker on AWS EC2",
+                        link: "mitmapit.org",
+                        image: "mapit-2.png"
                     },
                     {
                         name: "Stack Overflow",
