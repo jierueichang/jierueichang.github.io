@@ -16,30 +16,127 @@ Vue.component('panel-list', {
     </div>`
 });
 
+Vue.component('item-showcase', {
+    props: ['items'],
+    template: `
+    <div class="showcase-grid">
+        <div v-for="(item, index) in items" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="showcase-item" v-bind:class="{'reverse': index % 2 == 1}">
+                <div class="showcase-img" v-if="item.image" v-bind:style="'background-image:url(img/' + item.image + ')'"></div>
+                <div class="showcase-body">
+                    <a v-bind:href="'http://'+item.link" target="_blank" v-if="item.link"><h3>{{ item.name }}</h3></a>
+                    <a v-if="!item.link"><h3>{{ item.name }}</h3></a>
+                    <p v-if="item.subtitle" style="color: gray; margin: 5px 0px">{{ item.subtitle }}</p>
+                    <p v-html = "item.description"></p>
+                    <div v-if="item.links">
+                        <a v-for="link in item.links" v-bind:href="'http://'+link.link" target="_blank" class="showcase-link">
+                            {{ link.name }}
+                            <span>&#8599;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
+});
+
+let proj_showcase = new Vue(
+{
+    el: '#projects-showcase',
+    data:
+    {
+        items: [
+            // {
+            //     name: "Flying Programmable Gate Array",
+            //     subtitle: "FPGA on a drone",
+            //     description: "I'm designing and building a custom flight computer based around a Xilinx Spartan-7 FPGA. The system features onboard sensor fusion, closed-loop control, and optical flow for lateral position tracking. The FPGA architecture is optimized for low-latency real-time processing, with dedicated hardware modules for sensor interfacing and control algorithms.",
+            //     link: "github.com/knosmos/fpga-drone",
+            //     image: "fpga-drone.jpg",
+            // },
+            {
+                name: "An Image is Worth 1024 Tiles",
+                subtitle: "Multicore parallel computer vision accelerator",
+                description: "We're developing a multicore processor specialized for computer vision workloads. It uses four parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We're working on implementing this system on a Spartan-7 FPGA and evaluating its performance on multiple computer vision pipelines.",
+                link: "github.com/knosmos/peep",
+                image: "peep.png",
+                // links: [
+                //     {
+                //         name: "Project Repository",
+                //         link: "github.com/knosmos/peep"
+                //     },
+                //     {
+                //         name: "Technical Paper",
+                //         link: "jierueichang.github.io/assets/Peep_Tech_Report.pdf"
+                //     }
+                // ]
+            },
+            {
+                name: "MapIT",
+                subtitle: "Mapping MIT's many labyrinths",
+                description: "As part of the AppDev@MIT initiative, I lead development of a room-scale searchable indoor map of the entire MIT campus. It's used by hundreds of members of the MIT community, leveraging computer vision to analyze 900 floorplans and 40000+ rooms. We built it with Vite/Express/React, and deployed it with Jenkins and Docker on AWS EC2.",
+                link: "mitmapit.org",
+                image: "mapit-2.png",
+                links: [
+                    {
+                        name: "Project Website",
+                        link: "mitmapit.org"
+                    },
+                    {
+                        name: "Developer Blog",
+                        link: "appdev-blog.vercel.app/posts/mapit-labeling"
+                    }
+                ]
+            },
+            {
+                name: "Wirehead",
+                subtitle: "2nd Place, HackMIT",
+                description: "Built in 24 hours, Wirehead is an end-to-end PCB design automation tool with LLM RAG datasheet analyses and an AI-informed constrained mixed-integer linear programming layout engine. It's designed to drastically reduce the time required to design simple custom PCBs for hardware hackers and embedded systems engineers.",
+                link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc",
+                image: "hackmit_win.jpg",
+                links: [
+                    {
+                        name: "Project Page",
+                        link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc"
+                    },
+                    {
+                        name: "GitHub Repository",
+                        link: "github.com/knosmos/wirehead"
+                    }
+                ]
+            },
+            {
+                name: "Poser",
+                subtitle: "Robotic manipulation of jointed objects",
+                description: "We're developing a robotic system capable of manipulating jointed objects, such as articulated humanoid mannequins. It runs antipodal grasp computation, compliant controllers, and trajectory optimization algorithms to execute precise manipulation tasks.",
+                image: "poser.png",
+            },
+            {
+                name: "Radian Mk II",
+                subtitle: "2nd Place, Robocup World Championships",
+                description: "An autonomous soccer robot with realtime omnidirectional infrared ball tracking, precision scoring algorithms, and Bluetooth-enabled multi-agent strategizing and coordination.",
+                image: "radian_2023.jpg",
+                link: "soccer-robotics.github.io",
+                links: [
+                    {
+                        name: "Team Website",
+                        link: "soccer-robotics.github.io"
+                    },
+                    {
+                        name: "Technical Paper",
+                        link: "soccer-robotics.github.io/assets/Radian_2023_TDP.pdf"
+                    }
+                ]
+            },
+        ]
+    }
+});
+
 let proj = new Vue(
 {
     el: '#projects-grid',
     data:
     {
         projects: [
-            {
-                name: "Radian",
-                description: "2nd Place at Robocup World Championships, 1st Place at USA Robocup Junior: autonomous soccer robot with localization, PID-controlled movement, smart scoring and defense algorithms, solenoid driven kicker, and Bluetooth communication",
-                image: "radian_2023.jpg",
-                link: "soccer-robotics.github.io"
-            },
-            {
-                name: "Wirehead",
-                description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM RAG datasheet analyses and AI-informed constrained mixed-integer linear programming layout engine",
-                link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc",
-                image: "hackmit_win.jpg"
-            },
-            {
-                name: "MapIT",
-                description: "Room-scale searchable indoor map of the entire MIT campus used by 1000+ members of the MIT community. Leverages computer vision to analyze 900 floorplans and 40000+ rooms; deployed with Jenkins and Docker on AWS EC2",
-                link: "mitmapit.org",
-                image: "mapit-2.png"
-            },
             {
                 name: "CPT Practice Platform",
                 description: "Platform for practicing competitive programming with custom-written problems, 1000+ solution submissions, and 15k+ monthly page views",
@@ -169,33 +266,92 @@ let proj = new Vue(
     }
 });
 
-let exp = new Vue(
+let exp_showcase = new Vue(
 {
-    el: '#experience-grid',
+    el: '#experience-showcase',
     data:
     {
         items: [
             {
                 name: 'Freitas Research Group',
                 subtitle: 'Undergraduate Researcher',
-                description: "With Prof. Rodrigo Freitas and Daniel Xiao, I'm building ML-driven tools for characterizing crystalline systems. Our goal is to identify dislocation networks in large-scale molecular simulations of complex metal alloys, allowing for fast prediction of chemical and mechanical properties.",
+                description: "I leverage E(3)-equivariant graph convolutional neural networks to characterize chromium diffusion rates in advanced metal 3D printing, and wield SLURM to run large-scale simulations on high-performance compute clusters. Pictured is a visualization of our GNN-based phase prediction and interface tracking system. Our prior work on graph neural networks for crystal structure classification ran 10x faster and with 11% higher accuracy than existing data-driven methods.",
                 link: 'freitas.mit.edu',
-                image: 'freitas-3.png'
+                image: 'freitas-crystal-growth.gif',
+                links: [
+                    {
+                        name: "Group Website",
+                        link: "freitas.mit.edu"
+                    },
+                ]
+            },
+            {
+                name: "Space Propulsion Laboratory",
+                subtitle: "Software Engineer",
+                description: "I develop mission control software for STEP-1, a CubeSat demonstrator of a novel electrospray propulsion engine. Closer to the hardware, I'm developing high-redundancy firmware for STEP-1's onboard payload controller to interface with sensors and propulsion systems.",
+                link: "spl.mit.edu",
+                image: "step1.png"
             },
             {
                 name: 'World Wildlife Fund',
                 subtitle: 'AI/ML Intern',
-                description: "At WWF, I built the first-ever ML model for projecting climate impacts on global livestock production, and developed GCP cloud infrastructure with Terraform to pipeline underwater sensor data for a Google-backed mangrove monitoring project.",
+                description: "I worked with WWF's Senior Director of Innovation Startups to build the world's first ML model for projecting climate impacts on global livestock production. Alongside WWF's lead data scientist, I also developed GCP cloud infrastructure with Terraform, pipelining underwater sensor data from across Mexico for a Google-backed mangrove monitoring project.",
                 link: 'wwf.panda.org/',
-                image: 'wwf2.jpg'
+                image: 'wwf2.jpg',
+                links: [
+                    {
+                        name: "Article in MIT PKG Center",
+                        link: "pkgcenter.mit.edu/2025/09/19/social-impact-internships-jieruei-chang-28/"
+                    },
+                    {
+                        name: "Technical Report",
+                        link: "jierueichang.github.io/assets/cattlelogue.pdf"
+                    }
+                ]
             },
             {
                 name: 'MIT Rocket Team',
-                subtitle: 'Avionics Lead, LP&C',
-                description: "I'm leading the avionics side of a pathfinder for a propulsively-landing rocket, with a liquid-fueled engine and thrust vector control. We're developing custom flight computers and avionics systems to enable the necessary high-precision navigation and control.",
+                subtitle: 'Avionics Lead',
+                description: "I lead a team of four in the development of an STM32 flight computer and firmware for SPHINX, an autonomous VTVL propulsive lander pathfinder. I also design distributed extensible CANbus sensor/actuator networks for control and instrumentation on a thrust-vectoring liquid-fueled engine.",
                 link: 'rocketry.mit.edu',
                 image: 'rocket-team-TEMP.webp'
             },
+            {
+                name: 'Appier',
+                subtitle: 'Software Engineering Intern (Backend)',
+                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, and retrieval-augmented generation pipelines to build website characterization systems. I gained lots of free snacks and a taste of work in a fast-paced industry environment.",
+                link: 'www.appier.com/en/products/aixon',
+                image: 'appier2.jpg',
+                links: [
+                    {
+                        name: "Final Presentation",
+                        link: "jierueichang.github.io/assets/appier.pdf"
+                    }
+                ]
+            },
+            {
+                name: 'Applied Computing and Multimedia Lab',
+                subtitle: 'Research Intern',
+                description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases under the guidance of Prof. Ching-Chun Huang. Leveraging time-series RNNs and twin-network cross supervision, my model could produce accurate respiratory sound classifications even if only 1/16 of its dataset was labeled. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT Undergraduate Research Technology Conference.',
+                link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
+                image: 'research.png',
+                links: [
+                    {
+                        name: "Paper",
+                        link: "ieeexplore.ieee.org/document/10535006"
+                    },
+                ]
+            }
+        ]
+    }
+});
+
+let exp = new Vue(
+{
+    el: '#experience-grid',
+    data:
+    {
+        items: [
             {
                 name: 'MIT Arcturus',
                 subtitle: 'Software Engineer',
@@ -210,27 +366,27 @@ let exp = new Vue(
                 link: 'web.mit.edu/dbf/www/',
                 image: 'dbf_proto2.jpg'
             },
-            {
-                name: 'Appier',
-                subtitle: 'Software Engineering Intern',
-                description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, and retrieval-augmented generation pipelines to build website characterization systems. I gained lots of free snacks and a taste of work in a fast-paced industry environment.",
-                link: 'www.appier.com/en/products/aixon',
-                image: 'appier2.jpg'
-            },
-            {
-                name: 'Princeton Soccer Robotics',
-                subtitle: 'Captain',
-                description: "As captain of PSR and its Lightweight Division team Radian, I integrated intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
-                link: 'soccer-robotics.github.io/',
-                image: 'radian_team_2.jpg'
-            },
-            {
-                name: 'Applied Computing and Multimedia Lab',
-                subtitle: 'Research Intern',
-                description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
-                link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
-                image: 'research.png'
-            },
+            // {
+            //     name: 'Appier',
+            //     subtitle: 'Software Engineering Intern',
+            //     description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, and retrieval-augmented generation pipelines to build website characterization systems. I gained lots of free snacks and a taste of work in a fast-paced industry environment.",
+            //     link: 'www.appier.com/en/products/aixon',
+            //     image: 'appier2.jpg'
+            // },
+            // {
+            //     name: 'Princeton Soccer Robotics',
+            //     subtitle: 'Captain',
+            //     description: "As captain of PSR and its Lightweight Division team Radian, I integrated intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
+            //     link: 'soccer-robotics.github.io/',
+            //     image: 'radian_team_2.jpg'
+            // },
+            // {
+            //     name: 'Applied Computing and Multimedia Lab',
+            //     subtitle: 'Research Intern',
+            //     description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
+            //     link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
+            //     image: 'research.png'
+            // },
             // {
             //     name: 'Princeton Competitive Programming Team',
             //     subtitle: 'Co-Founder',

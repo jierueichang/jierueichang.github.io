@@ -366,6 +366,99 @@ h2 {
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
+/* Showcases */
+.showcase-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.showcase-item {
+    display: flex;
+    gap: 30px;
+}
+
+.showcase-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.showcase-img {
+    width: 40%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: 2px solid var(--secondary);
+    box-sizing: border-box;
+}
+
+.showcase-body {
+    width: 60%;
+}
+
+.showcase-body h3 {
+    margin-top: -0.2em;
+    margin-bottom: 10px;
+    color: var(--accent);
+    font-family: SpaceGrotesk, Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.showcase-body p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14pt;
+}
+
+.showcase-link {
+    font-size: 12pt;
+    border: 1px solid var(--accent);
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.showcase-link span {
+    transition: 0.2s all;
+    position: relative;
+    top: -1px;
+    left: 0px;
+}
+
+.showcase-link:hover {
+    background-color: var(--secondary);
+    color: var(--heading);
+    letter-spacing: normal;
+}
+
+.showcase-link:hover span {
+    top: -5px;
+    left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .showcase-item, .showcase-item.reverse {
+        flex-direction: column;
+    }
+    .showcase-img {
+        width: 100%;
+        height: 200px;
+    }
+    .showcase-body {
+        width: 100%;
+    }
+}
+
+
 /* That conway button */
 #viz-toggle {
     position: absolute;

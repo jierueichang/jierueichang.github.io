@@ -53,10 +53,10 @@
             <div class="main-content">
                 <div id="about">
                     <a name="about"></a>
-                    <h1 data-aos="zoom-in">about<span style="color:var(--accent)">.</span></h1>
+                    <h1 data-aos="zoom-in">hello there<span style="color:var(--accent)">.</span></h1>
                     <p data-aos="zoom-in">
-                        I love working on <a href="projects">projects</a> that involve electrical engineering, computer vision, or machine learning—and
-                        especially ones that intertwine them together. I've researched graph neural networks for crystal classification in complex metal alloys, built machine
+                        I work in the vector space spanned by machine learning, data science, computer vision, and embedded systems.
+                        I've researched graph neural networks for crystal characterization in complex metal alloys, built machine
                         learning systems for Taiwan's first digital unicorn startup, and developed cloud infrastructure to stream data from sensors deep in the <a href="https://www.worldwildlife.org/projects/manglaria-using-artificial-intelligence-to-save-mangroves-in-a-changing-climate">mangrove forests
                         of Mexico</a>.
                         
@@ -79,6 +79,8 @@
                     <h1 data-aos="zoom-in">experience<span style="color:var(--accent)">.</span></h1>
                     <p data-aos="zoom-in">Some of the many things I've been a part of.</p>
                     <br><br>
+                    <item-showcase id="experience-showcase" v-bind:items="items"></item-showcase>
+                    <br><br>
                     <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
                 </div>
                 <div id="projects">
@@ -89,6 +91,8 @@
                         <a href="projects">[View all projects]</a>
                         <a href="https://github.com/knosmos?tab=repositories" target="_blank">[Github]</a>                        
                     </div>
+                    <br><br>
+                    <item-showcase id="projects-showcase" v-bind:items="items"></item-showcase>
                     <br><br>
                     <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
                     <br><br>
