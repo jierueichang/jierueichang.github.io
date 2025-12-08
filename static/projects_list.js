@@ -41,6 +41,11 @@ let proj = new Vue({
                         image: "mapit-2.png"
                     },
                     {
+                        name: "Poser",
+                        description: "Robotic manipulation of jointed humanoid bodies with pose estimation, antipodal grasping, and compliant control",
+                        image: "poser.png"
+                    },
+                    {
                         name: "Stack Overflow",
                         description: "Self-driving block-stacking robot: winner of MIT Mobile Autonomous Systems Laboratory 2025",
                         link: "maslab.mit.edu/2025/wiki/team08",
@@ -121,6 +126,17 @@ let proj = new Vue({
                         description: "Machine learning for projection of climate-driven shifts in livestock distribution",
                         link: "github.com/knosmos/cattlelogue",
                         image: "cattlelogue.png"
+                    },
+                    {
+                        name: "Blindset",
+                        description: "SET with facedown cards: a game of memory and pattern recognition, built with Next.js",
+                        link: "blindset.vercel.app",
+                        image: "blindset.png"
+                    },
+                    {
+                        name: "An Image is Worth 1024 Tiles",
+                        description: "Multicore image processing accelerator on FPGA",
+                        image: "peep.png"
                     }
                 ]
             },

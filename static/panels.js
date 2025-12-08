@@ -56,19 +56,19 @@ let proj_showcase = new Vue(
             {
                 name: "An Image is Worth 1024 Tiles",
                 subtitle: "Multicore parallel computer vision accelerator",
-                description: "We're developing a multicore processor specialized for computer vision workloads. It uses four parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We're working on implementing this system on a Spartan-7 FPGA and evaluating its performance on multiple computer vision pipelines.",
+                description: "We developed a quadcore processor specialized for computer vision workloads. It uses parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We implemented this system on a Spartan-7 FPGA and validated performance on multiple computer vision pipelines.",
                 link: "github.com/knosmos/peep",
                 image: "peep.png",
-                // links: [
-                //     {
-                //         name: "Project Repository",
-                //         link: "github.com/knosmos/peep"
-                //     },
-                //     {
-                //         name: "Technical Paper",
-                //         link: "jierueichang.github.io/assets/Peep_Tech_Report.pdf"
-                //     }
-                // ]
+                links: [
+                    {
+                        name: "Project Repository",
+                        link: "github.com/knosmos/peep"
+                    },
+                    // {
+                    //     name: "Technical Paper",
+                    //     link: "jierueichang.github.io/assets/Peep_Tech_Report.pdf"
+                    // }
+                ]
             },
             {
                 name: "MapIT",
@@ -107,8 +107,14 @@ let proj_showcase = new Vue(
             {
                 name: "Poser",
                 subtitle: "Robotic manipulation of jointed objects",
-                description: "We're developing a robotic system capable of manipulating jointed objects, such as articulated humanoid mannequins. It runs antipodal grasp computation, compliant controllers, and trajectory optimization algorithms to execute precise manipulation tasks.",
+                description: "We developed a bimanual robotic system capable of manipulating jointed objects, such as articulated humanoid mannequins. It runs antipodal RGBD pose estimation, grasp computation, compliant controllers, and trajectory optimization algorithms to execute precise manipulation tasks.",
                 image: "poser.png",
+                links: [
+                    {
+                        name: "Technical Paper",
+                        link: "jierueichang.github.io/assets/poser.pdf"
+                    }
+                ]
             },
             {
                 name: "Radian Mk II",
