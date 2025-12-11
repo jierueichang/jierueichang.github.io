@@ -54,9 +54,9 @@ let proj_showcase = new Vue(
             //     image: "fpga-drone.jpg",
             // },
             {
-                name: "An Image is Worth 1024 Tiles",
+                name: "An Image is Worth 16×16 Tiles",
                 subtitle: "Multicore parallel computer vision accelerator",
-                description: "We developed a quadcore processor specialized for computer vision workloads. It uses parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We implemented this system on a Spartan-7 FPGA and validated performance on multiple computer vision pipelines.",
+                description: "We developed a quadcore processor specialized for computer vision workloads. It uses parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We implemented this system on a Spartan-7 FPGA and validated performance on multiple computer vision pipelines, demonstrating ~17x speedup.",
                 link: "github.com/knosmos/peep",
                 image: "peep.png",
                 links: [
@@ -64,10 +64,10 @@ let proj_showcase = new Vue(
                         name: "Project Repository",
                         link: "github.com/knosmos/peep"
                     },
-                    // {
-                    //     name: "Technical Paper",
-                    //     link: "jierueichang.github.io/assets/Peep_Tech_Report.pdf"
-                    // }
+                    {
+                        name: "Technical Paper",
+                        link: "jierueichang.github.io/assets/peep.pdf"
+                    }
                 ]
             },
             {
@@ -99,7 +99,7 @@ let proj_showcase = new Vue(
                         link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc"
                     },
                     {
-                        name: "GitHub Repository",
+                        name: "Project Repository",
                         link: "github.com/knosmos/wirehead"
                     }
                 ]
@@ -107,12 +107,16 @@ let proj_showcase = new Vue(
             {
                 name: "Poser",
                 subtitle: "Robotic manipulation of jointed objects",
-                description: "We developed a bimanual robotic system capable of manipulating jointed objects, such as articulated humanoid mannequins. It runs antipodal RGBD pose estimation, grasp computation, compliant controllers, and trajectory optimization algorithms to execute precise manipulation tasks.",
+                description: "We developed a bimanual robotic system capable of manipulating jointed objects, such as articulated humanoid mannequins. It runs RGBD pose estimation, antipodal grasp computation, compliant controllers, and trajectory optimization algorithms to execute precise manipulation tasks.",
                 image: "poser.png",
                 links: [
                     {
                         name: "Technical Paper",
                         link: "jierueichang.github.io/assets/poser.pdf"
+                    },
+                    {
+                        name: "Project Video",
+                        link: "youtube.com/watch?v=0zt8CV0h6kI"
                     }
                 ]
             },
