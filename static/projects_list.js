@@ -29,14 +29,19 @@ let proj = new Vue({
                 year: "2025",
                 projects: [
                     {
+                        name: "An Image is Worth 16x16 Tiles",
+                        description: "Multicore computer vision accelerator on FPGA, with specialized processor cores and cache geometries",
+                        image: "peep.png"
+                    },
+                    {
                         name: "Wirehead",
-                        description: "HackMIT 2nd Place Grand Prize: end-to-end PCB design automation with LLM RAG datasheet analyses and AI-informed constrained mixed-integer linear programming layout engine",
+                        description: "HackMIT 2nd Place: end-to-end PCB design automation with LLM RAG datasheet analyses and AI-informed constrained mixed-integer linear programming layout engine",
                         link: "plume.hackmit.org/project/wmcby-lozhz-hqeuj-njzoc",
                         image: "wirehead.png"
                     },
                     {
                         name: "MapIT",
-                        description: "Room-scale searchable indoor map of the entire MIT campus used by 1000+ members of the MIT community. Leverages computer vision to analyze 900 floorplans and 40000+ rooms; deployed with Jenkins and Docker on AWS EC2",
+                        description: "Room-scale searchable indoor map of the entire MIT campus used by 1000+ members of the MIT community, leveraging computer vision to analyze 900 floorplans and 40000+ rooms",
                         link: "mitmapit.org",
                         image: "mapit-2.png"
                     },
@@ -74,11 +79,6 @@ let proj = new Vue({
                         description: "Capacitive-touch telegraph lamp that relays Morse code over the internet",
                         link: "github.com/knosmos/signal-lamp",
                         image: "signallamp.png"
-                    },
-                    {
-                        name: "Spinny Hologram of Death",
-                        description: "Volumetric display with custom ESP32-based spinning LED matrix",
-                        image: "hologram.png"
                     },
                     {
                         name: "Ytterbium",
@@ -134,9 +134,10 @@ let proj = new Vue({
                         image: "blindset.png"
                     },
                     {
-                        name: "An Image is Worth 1024 Tiles",
-                        description: "Multicore image processing accelerator on FPGA",
-                        image: "peep.png"
+                        name: "TESS is LIT",
+                        description: "A novel few-shot learning approach on timeseries vision transformers designed for data triage from the TESS satellite",
+                        link: "knosmos.github.io/tess-is-lit",
+                        image: "tess-data.png"
                     }
                 ]
             },
@@ -208,6 +209,11 @@ let proj = new Vue({
                         description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
                         link: "knosmos.github.io/rexplorer",
                         image: "rex.jpg"
+                    },
+                    {
+                        name: "Spinny Hologram of Death",
+                        description: "Volumetric display with custom ESP32-based spinning LED matrix",
+                        image: "hologram.png"
                     },
                 ]
             },

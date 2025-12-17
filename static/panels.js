@@ -121,6 +121,18 @@ let proj_showcase = new Vue(
                 ]
             },
             {
+                name: "TESS is LIT",
+                subtitle: "Exoplanet triage with few-shot transformers",
+                description: "Vision transformers typically require millions of training examples. This makes them difficult to apply to tasks like TESS exoplanet detection, where only a tiny fraction of the training data may contain objects of interest. We propose Loss Informed Tuning (LIT), a novel fine-tuning method that leverages reconstruction loss as a signal to improve few-shot learning performance.",
+                image: "tess-data.png",
+                links: [
+                    {
+                        name: "Writeup",
+                        link: "knosmos.github.io/tess-is-lit"
+                    }
+                ]
+            },
+            {
                 name: "Radian Mk II",
                 subtitle: "2nd Place, Robocup World Championships",
                 description: "An autonomous soccer robot with realtime omnidirectional infrared ball tracking, precision scoring algorithms, and Bluetooth-enabled multi-agent strategizing and coordination.",
