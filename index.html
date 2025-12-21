@@ -28,7 +28,17 @@
                 <div class="intro-grid">
                     <div class="vertical-flex">
                         <div id="selfie" data-aos="zoom-out-right">
-                            <img src="img/profile4.jpg">
+                            <img src="img/profile5.jpg" id="profile-pic">
+                            <script>
+                                const profilePic = document.getElementById("profile-pic");
+                                const selfieDiv = document.getElementById("selfie");
+                                selfieDiv.addEventListener("mouseover", () => {
+                                    profilePic.src = "img/profile_shocked_gemini.jpg";
+                                });
+                                selfieDiv.addEventListener("mouseout", () => {
+                                    profilePic.src = "img/profile5.jpg";
+                                });
+                            </script>
                             <div id="circle"></div>
                             <svg id="hexagon-wrapper" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <polygon id="hexagon" points="300,150 225,280 75,280 0,150 75,20 225,20"></polygon>
