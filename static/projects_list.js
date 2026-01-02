@@ -25,6 +25,25 @@ let proj = new Vue({
     el: '#projects-grid',
     data: {
         items: [
+            // {
+            //     year: "2026",
+            //     projects: [
+            //         {
+            //             name: "wingman",
+            //             description: "Real-time flight tracker app for the frequent flyer, built with React Native",
+            //             link: "github.com/knosmos/wingman",
+            //             image: "wingman.png"
+            //         },
+            //         {
+            //             name: "red i removal",
+            //             description: "Automated removal of lowercase 'i' characters from images using computer vision and ML inpainting",
+            //         },
+            //         {
+            //             name: "Please Listen Carefully As Our Menu Options Have Changed",
+            //             description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
+            //         }
+            //     ]
+            // },
             {
                 year: "2025",
                 projects: [

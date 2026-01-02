@@ -9,6 +9,10 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,9 +50,18 @@
                         </div>
                     </div>
                     <div class="vertical-flex">
-                        <img src="assets/heading-small-alt2.png" id="heading-image" alt="Jieruei Chang" data-aos="zoom-out-left">
+                        <!--<img src="assets/heading-small-alt2.png" id="heading-image" alt="Jieruei Chang" data-aos="zoom-out-left">-->
                         <div id="introduction" data-aos="zoom-out-left">
-                            <p>Hi! I'm Jieruei. I make things to solve problems. Sometimes they even work.</p>
+                            <h1 id="heading-text">Jieruei Chang <span id="heading-star">✦</span></h1>
+                            <p>Hi! I'm Jieruei <a id="pronounce-btn">/'ʤə,ʀe/</a>. I make things to solve problems. Sometimes they even work.</p>
+                            <script>
+                                document.getElementById('pronounce-btn').addEventListener('click', function() {
+                                    const utterance = new SpeechSynthesisUtterance('jehray');
+                                    utterance.rate = 0.7;
+                                    utterance.pitch = 1.0;
+                                    speechSynthesis.speak(utterance);
+                                });
+                            </script>
                         </div>
                         <div class="links" data-aos="zoom-out-left">
                             <a href="#experience">[experience]</a>
@@ -75,7 +88,7 @@
                         I enjoy questionable <a href="https://knosmos.github.io/brownian">creative writing</a>, <a href="https://thetech.com/authors/jieruei-chang">science journalism</a>, eating
                         <a href="https://en.wikipedia.org/wiki/Sodium_chloride">shredded rocks</a>,
                         and intaking caffeine in its many delicious forms.<br><br>
-                        I study at the <span id="mit-text">{{ mitText }}</span> (MIT), majoring in electrical engineering and computer science.
+                        I study at the <span id="mit-text">{{ mitText }}</span> (MIT), majoring in computer science and electrical engineering.
                     </p>
                     <div id="contact-content" class="links" data-aos="zoom-in">
                         <a href="mailto:jieruei@mit.edu" target="_blank">[email]</a>
@@ -87,7 +100,14 @@
                 <div id="experience">
                     <a name="experience"></a>
                     <h1 data-aos="zoom-in">experience<span style="color:var(--accent)">.</span></h1>
-                    <p data-aos="zoom-in">Some of the many things I've been a part of.</p>
+                    <p data-aos="zoom-in">
+                        I've been fortunate to work on interesting problems alongside amazing people from research labs and startups
+                        and way too many build teams. One question I get a lot is "so, Jieruei, what exactly
+                        do you <em>do</em>?" and I never have a definite answer. I learn what's needed to
+                        get the job done, whatever said job may be: machine learning, cloud infrastructure, embedded systems, computer vision,
+                        frontend, backend. My most recent interests are in digital design and computer architecture.
+                        Here are some of the groups I'm part of and some of the places I've been.
+                    </p>
                     <br><br>
                     <item-showcase id="experience-showcase" v-bind:items="items"></item-showcase>
                     <br><br>
@@ -96,7 +116,13 @@
                 <div id="projects">
                     <a name="projects"></a>
                     <h1 data-aos="zoom-in">projects<span style="color:var(--accent)">.</span></h1>
-                    <p data-aos="zoom-in">I'm always working on something new, whether it's purely for fun or actually useful.</p>
+                    <p data-aos="zoom-in">
+                        I'm always working on something new, whether it's purely for fun or actually useful. Building things
+                        has been one of my main hobbies since middle school, and I think I have over a hundred projects -
+                        some are tiny things built in an afternoon, and some are multi-month endeavors.
+                        One of the great things about a university like MIT is the sheer number of resources and people
+                        available to help bring ideas to life. Here are some of the projects that I'm pretty proud of.
+                    </p>
                     <div data-aos="zoom-in">
                         <a href="projects">[View all projects]</a>
                         <a href="https://github.com/knosmos?tab=repositories" target="_blank">[Github]</a>                        
@@ -119,8 +145,8 @@
                 <div id="contact">
                     <a name="contact"></a>
                     <h1 data-aos="zoom-in">contact<span style="color:var(--accent)">.</span></h1>
+                    <p>The fastest way to get in touch with me is probably via Discord <a>@conv2d</a> (yes, I'm chronically online). If you'd like to be more formal, feel free to shoot an email to <a>jieruei@mit.edu.</a></p>
                     <div id="contact-content" class="links" data-aos="zoom-in">
-                        <a href="mailto:jierueic@gmail.com" target="_blank">[email]</a>
                         <a href="https://github.com/knosmos" target="_blank">[github]</a>
                         <a href="https://www.linkedin.com/in/jieruei-chang-556176269/" target="_blank">[linkedin]</a>
                     </div>

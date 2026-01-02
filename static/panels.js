@@ -161,7 +161,7 @@ let proj = new Vue(
         projects: [
             {
                 name: "CPT Practice Platform",
-                description: "Platform for practicing competitive programming with custom-written problems, 1000+ solution submissions, and 15k+ monthly page views",
+                description: "Platform for hosting Kahoot-style competitive programming tournaments with custom problems, 1000+ solution submissions, and 15k+ monthly page views",
                 link: "phscpt.pythonanywhere.com",
                 image: "cptplatform.png"
             },
