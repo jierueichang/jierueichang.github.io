@@ -23,8 +23,37 @@
             <br><br><br><br><br>
             <a name="top"></a>
             <a href="index.html" data-aos="zoom-in" style="display:block">[home]</a>
-            <h1 data-aos="zoom-in" style="margin-top:30px">projects<span style="color:var(--accent)">.</span></h1>
-            <panel-list id="projects-grid" v-bind:years="items"></panel-list>
+            <h1 data-aos="zoom-in" style="margin-top:30px">coursework<span style="color:var(--accent)">.</span></h1>
+            <p data-aos="zoom-in">
+                Relevant technical courses I have taken during my time at university. If
+                you're a high school student or college freshman who's stumbled onto this page,
+                I hope this gives a pretty candid overview of the classes you might want (or need)
+                to take in the future.
+            </p>
+            <div id="classes">
+                <div v-for="course in classes">
+                    <p data-aos="zoom-in" style="margin-top:30px; border-left:var(--accent) 1px solid; padding-left:10px;">
+                        <span style="color:var(--accent)">{{ course.num }}</span> <span style="color:#fff">{{ course.name}}</span>
+                        <span style="color:#4c4c4c">- {{ course.grade }}</span>
+                        <br>
+                        {{ course.desc }}
+                    </p>
+                </div>
+            </div>
+            <br><br>    
+            <p data-aos="zoom-in">
+                There's also a handful of humanities courses I've taken that I found interesting:
+            </p>
+            <div id="humanities">
+                <div v-for="course in classes">
+                    <p data-aos="zoom-in" style="margin-top:30px; border-left:var(--accent) 1px solid; padding-left:10px;">
+                        <span style="color:var(--accent)">{{ course.num }}</span> <span style="color:#fff">{{ course.name}}</span>
+                        <span style="color:#4c4c4c">- {{ course.grade }}</span>
+                        <br>
+                        {{ course.desc }}
+                    </p>
+                </div>
+            </div>
             <br><br><br><br><br>
             <hr>
             <div class="footer" id="footer" data-aos="zoom-in">
@@ -35,7 +64,7 @@
                 <br>
             </div>
         </div>
-        <script src="static/projects_list.js"></script>
+        <script src="static/classes.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({

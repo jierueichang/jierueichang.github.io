@@ -516,6 +516,38 @@ let achievements = new Vue({
     }
 });
 
+let classes = new Vue(
+    {
+        el: '#classes',
+        data: {
+            classes: [{
+                num: "6.2080",
+                name: "Semiconductor Electronic Circuits",
+                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps."
+            },
+            {
+                num: "6.2600",
+                name: "Micro/Nano Processing Technology",
+                desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. You get to work in the MIT.nano cleanroom omg."
+            },
+            {
+                num: "6.5951",
+                name: "Secure Hardware Design",
+                desc: "Microarchitectural timing side channels, speculative execution attacks, Rowhammer, Trusted Execution Environment, physical attacks, hardware support for software security, and verification of digital systems."
+            },
+            {
+                num: "6.8300",
+                name: "Advances in Computer Vision",
+                desc: "Image formation, representation theory for vision, classic multi-view geometry, multi-view geometry in the age of deep learning, differentiable rendering, neural scene representations, correspondence estimation, optical flow computation, and point tracking."
+            },
+            {
+                num: "3.985",
+                name: "Archaeological Science",
+                desc: "Archaeology as an anthropological science. 14C dating, ice core and palynological analysis, GIS and other remote sensing techniques for site location, organic residue analysis."
+            }]
+        },
+    }
+)
 
 let footer = new Vue({
     el: '#footer',

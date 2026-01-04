@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="static/style.css">
         <link rel="icon" href="assets/logo-3.png">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js" defer async></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js" async></script>
 
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -88,7 +88,7 @@
                         I enjoy questionable <a href="https://knosmos.github.io/brownian">creative writing</a>, <a href="https://thetech.com/authors/jieruei-chang">science journalism</a>, eating
                         <a href="https://en.wikipedia.org/wiki/Sodium_chloride">shredded rocks</a>,
                         and intaking caffeine in its many delicious forms.<br><br>
-                        I study at the <span id="mit-text">{{ mitText }}</span> (MIT), majoring in computer science and electrical engineering.
+                        I study at the <span id="mit-text">{{ mitText }}</span> (MIT), majoring in <a href="classes">computer science and electrical engineering</a>.
                     </p>
                     <div id="contact-content" class="links" data-aos="zoom-in">
                         <a href="mailto:jieruei@mit.edu" target="_blank">[email]</a>
@@ -101,7 +101,7 @@
                     <a name="experience"></a>
                     <h1 data-aos="zoom-in">experience<span style="color:var(--accent)">.</span></h1>
                     <p data-aos="zoom-in">
-                        I've been fortunate to work on interesting problems alongside amazing people from research labs and startups
+                        I've been fortunate to work alongside amazing people from research labs and startups
                         and way too many build teams. One question I get a lot is "so, Jieruei, what exactly
                         do you <em>do</em>?" and I never have a definite answer. I learn what's needed to
                         get the job done, whatever said job may be: machine learning, cloud infrastructure, embedded systems, computer vision,
@@ -142,6 +142,26 @@
                     <h1>achievements<span style="color:var(--accent)">.</span></h1>
                     <panel-list id="achievements-grid" v-bind:panels="items"></panel-list>
                 </div>-->
+                <div id="coursework">
+                    <a name="coursework"></a>
+                    <h1 data-aos="zoom-in">coursework<span style="color:var(--accent)">.</span></h1>
+                    <p data-aos="zoom-in">
+                        This spring semester, I'm planning on taking:
+                    </p>
+                    <div id="classes">
+                        <div v-for="course in classes">
+                            <p data-aos="zoom-in" style="margin-top:30px; border-left:var(--accent) 1px solid; padding-left:10px;">
+                                <span style="color:var(--accent)">{{ course.num }}</span> <span style="color:#fff">{{ course.name}}</span>
+                                <br>
+                                {{ course.desc }}
+                            </p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div data-aos="zoom-in" style="text-align:center">
+                        <a href="classes">[View all courses]</a>                   
+                    </div>
+                </div>
                 <div id="contact">
                     <a name="contact"></a>
                     <h1 data-aos="zoom-in">contact<span style="color:var(--accent)">.</span></h1>
