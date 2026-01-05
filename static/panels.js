@@ -312,7 +312,7 @@ let exp_showcase = new Vue(
                 subtitle: "Software Engineer",
                 description: "I develop mission control software for STEP-1, a CubeSat demonstrator of a novel electrospray propulsion engine. Closer to the hardware, I'm developing high-redundancy firmware for STEP-1's onboard payload controller to interface with sensors and propulsion systems.",
                 link: "spl.mit.edu",
-                image: "step1.png"
+                image: "step1.jpg"
             },
             {
                 name: 'World Wildlife Fund',
@@ -421,7 +421,7 @@ let exp = new Vue(
                 subtitle: 'GPS/RC + Computer Vision Specialist',
                 description: 'On Princeton University\'s PAVE team, I built GPS/remote-control systems and designed high-performance computer vision models for autonomous electric boat navigation.',
                 link: 'princetonelectricspeedboating.com',
-                image: 'pave_splash2.png'
+                image: 'pave_splash2.jpg'
             },
             // {
             //     name: 'PHS Math Team',
