@@ -25,25 +25,53 @@ let proj = new Vue({
     el: '#projects-grid',
     data: {
         items: [
-            // {
-            //     year: "2026",
-            //     projects: [
-            //         {
-            //             name: "wingman",
-            //             description: "Real-time flight tracker app for the frequent flyer, built with React Native",
-            //             link: "github.com/knosmos/wingman",
-            //             image: "wingman.png"
-            //         },
-            //         {
-            //             name: "red i removal",
-            //             description: "Automated removal of lowercase 'i' characters from images using computer vision and ML inpainting",
-            //         },
-            //         {
-            //             name: "Please Listen Carefully As Our Menu Options Have Changed",
-            //             description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
-            //         }
-            //     ]
-            // },
+            {
+                year: "2026",
+                projects: [
+                    {
+                        name: "Please Listen Carefully As Our Menu Options Have Changed",
+                        description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
+                        image: "please-listen.jpg",
+                        link: "docs.google.com/presentation/d/e/2PACX-1vSD6SdgqdLQ3Ox6F1usWn3tKaqY73g3L0eQCw3PgcIIRVDfBaj9C7lA-s6tVQZHMIdgNfg4yQmHzRzX/pub?start=false&loop=false&delayms=3000&slide=id.g39195cc7aa6_0_358"
+                    },
+                    {
+                        name: "Please Read Instructions Carefully Before Use",
+                        description: "MakeMIT 1st Place (Entertainment): Automatic lens system with intelligent target tracking and holographic feedback",
+                        image: "please-read.jpg",
+                        link: "devpost.com/software/please-read-instructions-carefully-before-use"
+                    },
+                    {
+                        name: "wingman",
+                        description: "Real-time flight tracker app for the frequent flyer, built with React Native",
+                        // link: "github.com/knosmos/wingman",
+                        image: "wingman.png"
+                    },
+                    {
+                        name: "riskfive.ai",
+                        description: "RISC-V interpreter powered entirely by LLM",
+                        image: "riskfiveai.png"
+                    },
+                    {
+                        name: "Papyrus",
+                        description: "Distributed modular CANBus rocket avionics system",
+                        image: "papyrus.jpg"
+                    },
+                    {
+                        name: "Sphinx Flight Computer",
+                        description: "High-performance flight computer for VTVL landers",
+                        image: "sphinx.jpg"
+                    },
+                    {
+                        name: "Nybbler",
+                        description: "RP2040 ortholinear 40% mechanical keyboard",
+                        image: "nybbler.jpg"
+                    }
+                    // {
+                    //     name: "red i removal",
+                    //     description: "Automated removal of lowercase 'i' characters from images using computer vision and ML inpainting",
+                    // },
+                ]
+            },
             {
                 year: "2025",
                 projects: [
