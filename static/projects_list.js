@@ -41,6 +41,11 @@ let proj = new Vue({
                         link: "devpost.com/software/please-read-instructions-carefully-before-use"
                     },
                     {
+                        name: "It's Turtles All The Way Down",
+                        description: "Recursive pixel art pattern built with 5-micron photolithography on silicon wafer",
+                        image: "turtles_wafer.png",
+                    },
+                    {
                         name: "wingman",
                         description: "Real-time flight tracker app for the frequent flyer, built with React Native",
                         // link: "github.com/knosmos/wingman",
